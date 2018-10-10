@@ -38,8 +38,16 @@ ActiveRecord::Schema.define(version: 2018_10_10_204659) do
   end
 
   create_table "reviews", force: :cascade do |t|
+    t.text "body", null: false
+    t.integer "author_id", null: false
+    t.integer "business_id", null: false
+    t.integer "useful"
+    t.integer "funny"
+    t.integer "cool"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["author_id"], name: "index_reviews_on_author_id"
+    t.index ["business_id"], name: "index_reviews_on_business_id"
   end
 
   create_table "users", force: :cascade do |t|
