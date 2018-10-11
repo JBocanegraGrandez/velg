@@ -11,8 +11,9 @@ private
     !!current_user
   end
 
-  def login
-    session[:session_token] = current_user.reset_session_token!
+  def login(user)
+    session[:session_token] = user.reset_session_token!
+    @current_user = user
   end
 
   def logout
