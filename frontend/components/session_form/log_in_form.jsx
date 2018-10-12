@@ -45,6 +45,7 @@ class LogInForm extends React.Component {
           <div className="main-left-wrapper">
           <form className="form" onSubmit={this.handleSubmit} className="login-form-box">
             <div className="signup-form-top-container">
+              <div className="top-login-div"></div>
               <div className="signup-form-top-text">
               <h2 className="red-title">Log In to Velp </h2>
               <p className="sub-heading">New to Yelp? <Link to="/" className="link-solid">Sign Up</Link> </p>
@@ -57,15 +58,12 @@ class LogInForm extends React.Component {
                 <button className="google-button"
                   type="submit"> <i className="fab fa-google"></i>  Sign Up with Google</button>
               </div>
-              <fieldset className="middle-form">
+              <fieldset className="middle-form-login">
                 <legend className="or" align="center">OR</legend>
               </fieldset>
             </div>
             <div className="signup-form-bot-container">
             <div className="signup-form-bot">
-              <br/>
-              <div className='name'>
-             </div>
 
                 <input type="email"
                   value={this.state.email}
@@ -88,7 +86,7 @@ class LogInForm extends React.Component {
               <button className="red-button"
                 type="submit">Log In</button>
               <div className="question2">
-                <p className="fine-print2">New to Yelp? <Link to="/" className="link">Sign up</Link></p>
+                <p className="fine-print2">New to Yelp? <Link to="/signup" className="link"> Sign up</Link></p>
               </div>
             </div>
            </div>

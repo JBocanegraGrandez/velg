@@ -48,6 +48,7 @@ class SignUpForm extends React.Component {
           <div className="main-left-wrapper">
           <form className="form" onSubmit={this.handleSubmit} className="login-form-box">
             <div className="signup-form-top-container">
+              <div className="top-signup-div"></div>
               <div className="signup-form-top-text">
               <h2 className="red-title">Sign Up for Velp </h2>
               <p className="sub-heading">Connect with great vegan businesses</p>
@@ -67,7 +68,7 @@ class SignUpForm extends React.Component {
             </fieldset>
             <div className="signup-form-bot-container">
             <div className="signup-form-bot">
-              <br/>
+
               <div className='name'>
                 <input type="text"
                   placeholder="First Name"
@@ -113,7 +114,7 @@ class SignUpForm extends React.Component {
               <button className="red-button"
                 type="submit">Sign Up</button>
                 <div className="question2">
-                  <p className="fine-print2">Already on Yelp? <Link to="/" className="link">Log in</Link></p>
+                  <p className="fine-print2">Already on Yelp?<Link to="/login" className="link"> Log in</Link></p>
                 </div>
             </div>
            </div>
