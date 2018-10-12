@@ -1,0 +1,149 @@
+.img-container {
+  // background-color: blue;
+  background-image: image-url('main.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: bottom;
+  background-size: 1700px;
+  height: 550px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-holder {
+  width: 960px;
+  height: 100%;
+  padding-top: 80px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  /* justify-content: center; */
+}
+
+
+.logo {
+  width: 960px;
+  height: 80px;
+  background-color: transparent;
+  margin-bottom: 50px;
+  display: flex;
+}
+
+.search {
+  width: 960px;
+  height: 63px;
+  /* background-color: black; */
+  display: flex;
+}
+.items {
+  width: 960px;
+  height: 20px;
+  padding-bottom: 168px;
+  /* background-color: red; */
+}
+
+.left-search-container {
+  background-color: transparent;
+  height: 63px;
+  width: 480px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 4px 4px 4px;
+}
+
+.right-search-container {
+  background-color: transparent;
+  height: 63px;
+  width: 416px;
+  display: flex;
+  flex-direction: row;
+}
+.right-search-logo {
+  background: transparent;
+  height: 63px;
+  width: 64px;
+}
+
+#left-search-input {
+  width: 100%;
+  height: 33px;
+  display: inline-block;
+  background: transparent;
+  position: relative;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 400;
+  text-indent: 0px;
+  padding-top: 15px;
+  padding-left: 6px;
+}
+#right-search-input {
+  width: 100%;
+  height: 33px;
+  display: inline-block;
+  background: transparent;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 400;
+  text-indent: 0px;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.div-input{
+  width: 100%;
+  height: 45px;
+  margin-bottom: 18px;
+  background-color: white;
+}
+
+.div-label-find{
+  width: 49px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #666;
+  height: 35px;
+  margin-bottom: 18px;
+  padding-left: 10px;
+  background-color: white;
+  padding-top: 10px;
+  border-radius: 4px 0px 0px 4px;
+}
+.div-label-near{
+  width: 49px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #666;
+  height: 35px;
+  margin-bottom: 18px;
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.logo-glass {
+  background-color: #d32323;
+  width: 100%;
+  height: 45px;
+  border-style: none;
+  padding: 0;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+.logo-background {
+  height: 160px;
+  width: 250px;
+  background-image: image-url('logo.png');
+  background-size: cover;
+}
