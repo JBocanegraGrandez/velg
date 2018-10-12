@@ -1,7 +1,7 @@
 import React from 'react';
-const header = () => (
+const headerauth = () => (
   <div className="page-header">
   </div>
 );
 
-export default header;
+export default headerauth;
