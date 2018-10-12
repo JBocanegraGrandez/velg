@@ -2,6 +2,7 @@ import { connect } from 'react-redux';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
+import { withRouter } from 'react-router-dom';
 
 class LogInForm extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class LogInForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
-    this.props.login(user);
+    this.props.login(user).then(()=> this.props.history.push('/'));
   }
 
   renderErrors() {
@@ -108,4 +109,4 @@ class LogInForm extends React.Component {
   }
 }
 
-export default LogInForm;
+export default withRouter(LogInForm);

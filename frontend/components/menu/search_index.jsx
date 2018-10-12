@@ -52,7 +52,7 @@ class SearchIndexForm extends React.Component {
               <div className="search">
                 <div className="left-search-container">
                   <div className="div-label-find">
-                    <label for="left-search-input">Find</label>
+                    <label htmlFor="left-search-input">Find</label>
                   </div>
                   <div className="div-input">
                     <input id="left-search-input"
@@ -62,7 +62,7 @@ class SearchIndexForm extends React.Component {
                 </div>
                 <div className="right-search-container">
                   <div className="div-label-near">
-                    <label for="right-search-input">Near</label>
+                    <label htmlFor="right-search-input">Near</label>
                   </div>
                   <div className="div-input">
                     <input id="right-search-input"

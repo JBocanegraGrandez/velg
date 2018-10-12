@@ -31,7 +31,7 @@ class Api::UsersController < ApplicationController
     # respond_to do |format|
       if @user.save
         login(@user)
-        render 'api/users/index' # homepage = business index maybe?
+        render 'api/users/show' # homepage = business index maybe?
 
         # format.html { redirect_to @user, notice: 'User was successfully created.' }
         # format.json { render :show, status: :created, location: @user }
