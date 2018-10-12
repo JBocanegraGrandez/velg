@@ -7,7 +7,7 @@ class Api::SessionsController < ApplicationController
       login(@user)
       # redirect_to homepage #is homepage biz index?
       # render json: ["log in successfully (testing)"], status: 201 #for testing only
-      render "api/users/user.json.jbuilder"
+      render "api/users/show"
     else
       render json: ["Invalid username/password combination"], status: 401
     end

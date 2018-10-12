@@ -26,10 +26,32 @@ img {
   font-weight: normal;
 }
 
+.link-solid {
+  color: #0073bb;
+  text-decoration: none;
+  font-weight: 700;
+}
+
 input {
   letter-spacing: normal;
 word-spacing: normal;
 text-transform: none;
 text-indent: 0px;
 text-shadow: none;
+}
+
+fieldset {
+  display: block;
+  margin-inline-start: 2px;
+  margin-inline-end: 2px;
+  padding-block-start: 0.0em;
+  padding-inline-start: 0.0em;
+  padding-inline-end: 0.0em;
+  padding-block-end: 0.0em;
+  border-width: 0px;
+  border-style: groove;
+  border-color: #e6e6e6;
+  border-image: initial;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
 }
