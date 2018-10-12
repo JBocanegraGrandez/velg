@@ -1,8 +1,9 @@
 .page-header-main {
   background: transparent;
-  width: 100%;
-  height: 64px;
+  width: 960px;
+  height: 34px;
   position: absolute;
+  top: 30px;
 }
 
 .header-container {
@@ -178,4 +179,85 @@
   background-image: image-url('logo.png');
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+.menu-container {
+  background-color: transparent;
+  height: 37px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-items: baseline;
+}
+
+.menu-left {
+  background-color: transparent;
+  height: 37px;
+  width: 750px;
+  display: flex;
+  flex-direction: row;
+}
+.menu-right {
+  background-color: orange;
+  height: 37px;
+  // width: 210px; total ramaining size
+  width: 187px;
+}
+
+.menu-text-1 button{
+  height: 37px;
+  width: 123px;
+  background-color: transparent;
+  color: white;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.menu-text-1 button:hover {
+  border-bottom: 2px solid white;
+}
+
+.menu-text-2 button{
+  height: 37px;
+  width: 69px;
+  background-color: transparent;
+  color: white;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.menu-text-2 button:hover {
+  border-bottom: 2px solid white;
+}
+
+.menu-text-3 button{
+  height: 37px;
+  width: 51px;
+  background-color: transparent;
+  color: white;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.menu-text-3 button:hover {
+  border-bottom: 2px solid white;
 }
