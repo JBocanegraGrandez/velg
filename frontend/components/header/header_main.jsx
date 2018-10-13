@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderLog from './header_log.jsx';
+import HeaderLog from './header_log_container.jsx';
 const headerMain = () => (
   <div className="page-header-main">
     <div className="menu-container">
