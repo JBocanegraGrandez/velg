@@ -199,10 +199,13 @@
   flex-direction: row;
 }
 .menu-right {
-  background-color: orange;
+  background-color: transparent;
   height: 37px;
   // width: 210px; total ramaining size
   width: 187px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .menu-text-1 button{
@@ -260,4 +263,41 @@
 
 .menu-text-3 button:hover {
   border-bottom: 2px solid white;
+}
+
+.log-in-header-div button{
+  height: 37px;
+  width: 65px;
+  background-color: transparent;
+  color: white;
+  border-radius: 0px;
+  border: 0px;
+  border-bottom: 2px solid transparent;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.log-in-header-div:hover {
+  border-bottom: 2px solid white;
+}
+.sign-up-header-div button{
+  height: 37px;
+  width: 104px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid white;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 0px;
+}
+
+.sign-up-header-div button:hover {
+  background-color: white;
+  color: #999999;
 }

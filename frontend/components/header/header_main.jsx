@@ -14,7 +14,7 @@ const headerMain = () => (
           <button>Talk</button>
         </div>
       </div>
-      <div className="menu-right">
+      <div>
         <HeaderLog/>
       </div>
     </div>
