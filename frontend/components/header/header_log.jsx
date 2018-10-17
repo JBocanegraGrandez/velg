@@ -18,7 +18,7 @@ const HeaderLog = ({currentUser, logout}) => {
       <button onClick={logout} className="link-blank"><i className="fas fa-comment-alt"></i></button>
     </div>
     <div className="sign-up-header-div">
-      <Link to="/signup" className="link-blank"><button>Sign Up</button></Link>
+      <Link to="/signup" className="link-blank"><button onClick={logout} >Log out</button></Link>
     </div>
   </div>
   );
