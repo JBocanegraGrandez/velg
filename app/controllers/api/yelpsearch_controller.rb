@@ -1,6 +1,6 @@
 require "json"
-require "http"
-require "optparse"
+# require "http"
+# require "optparse"
 
 class YelpSearch::SessionsController < ApplicationController
 
