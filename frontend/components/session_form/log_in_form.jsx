@@ -27,21 +27,28 @@ class LogInForm extends React.Component {
   }
 
   renderErrors() {
-    // return(
-    //   <ul>
-    //     {this.props.errors.map((error, i) => (
-    //       <li key={`error-${i}`}>
-    //         {error}
-    //       </li>
-    //     ))}
-    //   </ul>
-    // );
+    if (this.props.errors.length === 0){
+      return "";
+    }
+    return(
+      <div className="errors">
+        <ul>
+          {this.props.errors.map((error, i) => (
+            <li key={`error-${i}`}>
+              {error}
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
   }
 
   render() {
     return (
 
-    <div className='auth-main'>
+    <div className="auth-holder">
+      {this.renderErrors()}
+      <div className='auth-main'>
         <div className="main-left">
           <div className="main-left-wrapper">
           <form className="form" onSubmit={this.handleSubmit} className="login-form-box">
@@ -104,7 +111,7 @@ class LogInForm extends React.Component {
           </div>
         </div>
       </div>
-
+    </div>
     );
   }
 }

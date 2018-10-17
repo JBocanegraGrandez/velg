@@ -15,6 +15,14 @@
   // flex-wrap: wrap;
 }
 
+.auth-holder {
+  width: 80%;
+  margin:auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  // height: 770px;
+}
 
 .main-left {
   display: flex;
@@ -262,6 +270,20 @@
 }
 .top-login-div{
   height: 128px;
+}
+
+.errors {
+  background: #fcd6d3;
+  box-sizing: border-box;
+  // position: relative;
+  margin: auto;
+  padding: 18px 18px 18px 24px;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 1.5em;
+  height: 60px;
+  width: 960px;
+  width: 80%;
 }
 
 #login {

@@ -98,15 +98,15 @@ class BusinessShowTop extends React.Component {
                 <div className="pics-preview">
                   <div className="pic-box">
                     <div className="pic-roll">
-                      <img src="https://s3-media2.fl.yelpcdn.com/bphoto/8J9ZswfeV5zdVJ5fxQGN5Q/ls.jpg">
+                      <img className="img-show-roll" src="https://s3-media2.fl.yelpcdn.com/bphoto/8J9ZswfeV5zdVJ5fxQGN5Q/ls.jpg">
                       </img>
                     </div>
                     <div className="pic-roll-main">
-                      <img src="https://s3-media3.fl.yelpcdn.com/bphoto/rRqOxkp1SlCpDKOGwBY-fw/ls.jpg">
+                      <img className="img-show-roll" src="https://s3-media3.fl.yelpcdn.com/bphoto/rRqOxkp1SlCpDKOGwBY-fw/ls.jpg">
                       </img>
                     </div>
                     <div className="pic-roll">
-                      <img src="https://s3-media1.fl.yelpcdn.com/bphoto/MS7ZROyC-YKYQRcHocmrKw/o.jpg">
+                      <img className="img-show-roll" src="https://s3-media1.fl.yelpcdn.com/bphoto/MS7ZROyC-YKYQRcHocmrKw/o.jpg">
                       </img>
                     </div>
                   </div>
