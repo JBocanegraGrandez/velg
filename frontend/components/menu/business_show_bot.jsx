@@ -20,7 +20,7 @@ const BusinessShowBot = ({business}) => (
     <div className="dates-details-container">
     <div className="dates-container">
       <h3>Hours</h3>
-      <table class="hour-table">
+      <table className="hour-table">
         <tbody>
           <tr><th>Mon</th><td><span>5:00 pm</span>&nbsp;-&nbsp;<span>9:30 pm</span></td></tr>
           <tr><th>Tue</th><td><span>5:00 pm</span>&nbsp;-&nbsp;<span>9:30 pm</span></td></tr>

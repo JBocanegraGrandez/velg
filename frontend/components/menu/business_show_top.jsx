@@ -116,9 +116,9 @@ class BusinessShowTop extends React.Component {
               </div>
               </div>
             </div>
-            <div class="show-bot-main-container">
-              <div class="show-bot-reviews-container"></div>
-              <div class="show-bot-business-details-right">
+            <div className="show-bot-main-container">
+              <div className="show-bot-reviews-container"></div>
+              <div className="show-bot-business-details-right">
                 <BusinessShowBot />
               </div>
             </div>
