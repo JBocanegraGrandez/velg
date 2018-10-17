@@ -8,10 +8,12 @@ import {
   HashRouter
 } from 'react-router-dom';
 import HeaderAuthContainer from './header/header_auth';
+import HeaderSearch from './header/header_search';
 import HeaderMainContainer from './header/header_main';
 import SignUpFormContainer from './session_form/sign_up_container';
 import LogInFormContainer from './session_form/log_in_container';
 import SearchIndexForm from './menu/search_container';
+import BusinessShowTop from './menu/business_show_top_container';
 import { AuthRoute } from "../util/route_util.jsx";
 // import SignUpFormContainer from './session_form/signup_form_container';
 // import LogInFormContainer from './session_form/login_form_container';
@@ -28,8 +30,9 @@ const App = () => (
     <Switch>
       <Route exact path="/login" component={LogInFormContainer} />
       <Route exact path="/signup" component={SignUpFormContainer} />
-      // <Route path='/' component={SearchIndexForm} />
-      // <Route path='/' component={HeaderMainContainer} />
+      <Route exact path="/business/:id" component={BusinessShowTop} />
+      <Route path='/' component={SearchIndexForm} />
+      <Route path="/" component={HeaderSearch} />
     </Switch>
   </div>
 );

@@ -39,3 +39,9 @@ export const logout = () => dispatch => (
     dispatch(logoutCurrentUser())
   ))
 );
+
+// export const search = search_term, location => (
+//   APIUtil.search(search_term, location).then(result => (
+//
+//   ))
+// )

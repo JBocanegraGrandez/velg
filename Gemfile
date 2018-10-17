@@ -52,6 +52,8 @@ group :development do
   gem 'pry-rails'
   gem 'annotate'
   # gem 'bcrypt'
+  # gem "http"
+  # gem "optparse"
 end
 
 group :test do

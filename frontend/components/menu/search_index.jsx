@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
 import HeaderMain from '../header/header_main';
+import SearchMain from '../menu/search_main';
 
 class SearchIndexForm extends React.Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class SearchIndexForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="master">
         <div className="img-container">
          <HeaderMain />
           <div>
@@ -49,31 +50,9 @@ class SearchIndexForm extends React.Component {
                 <div className="logo-background">
                 </div>
               </div>
-              <div className="search">
-                <div className="left-search-container">
-                  <div className="div-label-find">
-                    <label htmlFor="left-search-input">Find</label>
-                  </div>
-                  <div className="div-input">
-                    <input id="left-search-input"
-                    placeholder="home cleaners, burgers, spas..."
-                    type="text"></input>
-                  </div>
-                </div>
-                <div className="right-search-container">
-                  <div className="div-label-near">
-                    <label htmlFor="right-search-input">Near</label>
-                  </div>
-                  <div className="div-input">
-                    <input id="right-search-input"
-                    placeholder="address, neighborhood, city, state or zip"
-                    type="text"></input>
-                  </div>
-                </div>
-                <div className="right-search-logo">
-                  <button type="submit" className="logo-glass"></button>
-                </div>
-              </div>
+
+                <SearchMain />
+
               <div className="items">
                 <div>
                   Home Cleaners

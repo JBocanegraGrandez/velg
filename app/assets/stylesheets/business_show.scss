@@ -1,0 +1,334 @@
+.show-main-container {
+  display: flex;
+  justify-content: center;
+}
+
+.top-shelf{
+  width: 960px;
+  /* background-color: blue; */
+  height: 441px;
+  padding-top: 15px;
+  padding-bottom: 24px;
+  margin-left: 30px;
+}
+
+.top-shelf-gray {
+  z-index: -1;
+  position: absolute;
+  top: -9813px;
+  right: -9999px;
+  bottom: 0;
+  left: -9999px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #f5f5f5;
+  width: 20658px;
+  height: 10218px;
+}
+
+.title-container {
+  /* background-color: pink; */
+  width: 100%;
+  height: 111px;
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.left-biz-header {
+  height: 111px;
+  width: 525px;
+  padding-right: 30px;
+  /* background-color: black; */
+}
+
+.right-biz-header {
+  height: 36px;
+  width: 405px;
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.biz-title-container {
+  height: 42px;
+  width: 525px;
+  margin-top: 6px;
+  /* background-color: white; */
+}
+
+.biz-title-container h1 {
+  color: #333;
+  font-size: 36px;
+  padding-top: 6px;
+  line-height: 1.16667em;
+  font-weight: bold;
+}
+.rating-container {
+  height: 24px;
+  width: 525px;
+  margin-bottom: 9px;
+  /* background-color: orange; */
+  margin-top: 9px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.price-category {
+  /* background-color: white; */
+  height: 21px;
+  width: 277px;
+
+}
+
+.price-range {
+  letter-spacing: 1px;
+  white-space: nowrap;
+  /* background-color: white; */
+
+}
+
+.price-category {
+  margin-right: 6px;
+}
+
+.category a {
+  color: #0073bb;
+  text-decoration: none;
+  font: inherit;
+  vertical-align: baseline;
+  cursor: pointer;
+
+}
+
+.post-title-container {
+  height: 317px;
+  width: 960px;
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+}
+
+.map-container {
+  height: 316px;
+  width: 304px;
+  padding: 5px;
+  /* border: 1px solid #ccc; */
+  background-color: transparent;
+  display: table-cell;
+  vertical-align: middle
+}
+.map-info {
+  height: 304px;
+  width: 288px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  /* background-color: red; */
+
+}
+
+.map-top {
+  height: 135px;
+  width: 286px;
+  background-color: green;
+  cursor: pointer;
+  border: 1px solid #ccc
+}
+
+.map-bot {
+  min-height: 105px;
+  background-color: white;
+  margin-top: 2px;
+}
+
+.pics-preview {
+  width: 66.66667%;
+  display: table-cell;
+  vertical-align: middle;
+  height: 317px;
+  /* background-color: orange; */
+  /* width: 71%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pic-box {
+  width: 660px;
+  height: 220px;
+  position: absolute;
+  display: flex;
+  /* background-color: green; */
+}
+
+.pics-preview button {
+  color: black;
+  z-index: 100;
+  /* color: white; */
+  opacity: 0.5;
+  transform: scale(1.5);
+  cursor: pointer;
+  margin-left: 20px;
+  margin-right: 10px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  height: 24px;
+  width: 28px;
+
+}
+
+.stars {
+  height: 24px;
+  width: 132px;
+  margin-right: 6px;
+  background-color: red;
+  background-image: url(http://images.nymag.com/news/intelligencer/intelposts120326_starstruck_560.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.rating-container span{
+  color: #666;
+  font-weight: normal;
+}
+
+.review-button-container{
+  height: 40px;
+  width: 194px;
+  background-color: white;
+}
+
+.social-button-container{
+  margin-top: 4px;
+  background-color: red;
+  height: 30px;
+  width: 200px;
+  /* float: right; */
+}
+
+.write-review{
+  color: white;
+  border-color: #8d0005;
+  -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+  background-color: #d90007;
+  background: -webkit-linear-gradient(#d90007, #c91400);
+  background: linear-gradient(#d90007, #c91400);
+  cursor: pointer;
+  border: 1px black solid;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.28571em;
+  padding: 8px 19px 9px;
+  padding-left: 12px;
+  border-radius: 3px;
+  margin-right: 12px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.pic-roll {
+  width: 100%;
+  transition: transform .2s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+  height: 220px;
+  width: 220px;
+  display: block;
+}
+
+.pic-roll img{
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+.pic-roll-main {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.15);
+  z-index: 100;
+  transition: transform .2s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+}
+
+img:hover {
+  transform: scale(1.15);
+  z-index: 100;
+  width: 253px;
+  height: 253px;
+
+}
+
+.pic-roll:hover {
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.15);
+  z-index: 120;
+  transition: transform .2s;
+  overflow: hidden;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.15);
+}
+
+.address {
+  line-height: 18px;
+  margin-left: 15px;
+  width: 254px;
+  /* font-weight: 500; */
+  /* display: block; */
+  /* vertical-align: baseline; */
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+
+}
+.address-main {
+  line-height: 18px;
+  margin-left: 15px;
+  width: 254px;
+  font-weight: 700;
+  /* display: block; */
+  /* vertical-align: baseline; */
+  font-size: 14px;
+  line-height: 1.28571em;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.relative {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: baseline;
+  /* vertical-align: baseline; */
+}
+
+.relative span{
+  margin-left: 5px;
+}
+
+.show-bot-main-container{
+  // padding: 0px;
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 66% 33%;
+  grid-auto-rows: minmax(200px, auto);
+  grid-column-gap: 1.228em;
+  width: 960px;
+  margin: 0 auto;
+}
+.show-bot-reviews-container {
+  background-color: red;
+  padding-right: 15px;
+}
+
+.show-bot-business-details-right {
+  // background-color: blue;
+  font-family: inherit;
+  position: relative;
+}
