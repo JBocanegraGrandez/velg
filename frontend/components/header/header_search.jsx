@@ -1,5 +1,5 @@
 import React from 'react';
-import SearchMainLittle from "../menu/search_main_little";
+import SearchMainLittle from "../menu/search_little_container";
 import HeaderLog from './header_log_container.jsx';
 const HeaderSearch = () => (
   <div className="page-header">
