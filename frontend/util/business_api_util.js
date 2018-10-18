@@ -6,6 +6,12 @@ export const getBusinesses = data => (
     data
   })
 );
+export const getMatchesBusinesses = data => (
+  $.ajax({
+    method: 'GET',
+    url: `api/bussinesses?YOLO=${data}`,
+  })
+);
 
 export const getBusiness = id => (
   $.ajax({

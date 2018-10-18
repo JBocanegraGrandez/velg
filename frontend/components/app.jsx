@@ -11,7 +11,7 @@ import HeaderAuthContainer from './header/header_auth';
 import HeaderMainContainer from './header/header_main';
 import SignUpFormContainer from './session_form/sign_up_container';
 import LogInFormContainer from './session_form/log_in_container';
-import SearchIndexForm from './menu/search_container';
+import SearchIndexForm from './menu/search_index';
 import BusinessShowTop from './menu/business_show_top_container';
 import { AuthRoute } from "../util/route_util.jsx";
 

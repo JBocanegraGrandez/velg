@@ -68,7 +68,8 @@
   color: #d32323;
   margin: 0 0 8px 0;
   font-weight: 700;
-  font-size: 1.17em;
+  // font-size: 1.17em;
+  font-size: 16px;
   // margin-block-start: 1em;
   // margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -80,7 +81,8 @@
   color: #d32323;
   margin: 0 0 8px 0;
   font-weight: 700;
-  font-size: 1.17em;
+  font-size: 16px;
+  // font-size: 1.17em;
   // margin-block-start: 1em;
   // margin-block-end: 1em;
   margin-inline-start: 0px;
@@ -100,4 +102,17 @@ h3 ul {
 
 .dates-details-container {
   border-left: 1px solid #e6e6e6;
+}
+
+.business-details-ul {
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 25.9999px;
+
+}
+
+.business-details-ul li span {
+  font-weight: bold;
+  margin-left: 6px;
+  font-size: 14px;
 }

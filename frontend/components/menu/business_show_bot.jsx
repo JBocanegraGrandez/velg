@@ -34,17 +34,18 @@ const BusinessShowBot = ({business}) => (
     </div>
     <div className="business-details">
       <h3>More business info</h3>
-      <ul>
-        <li>Delivery {yesorno(business.delivery)}</li>
-        <li>Takeout {yesorno(business.takeout)}</li>
-        <li>Outdoor Seating </li>
-        <li>Dogs Allowed </li>
-        <li>Full bar </li>
-        <li>Breakfast </li>
-        <li>Lunch {yesorno(business.lunch)}</li>
-        <li>Dinner </li>
-        <li>Brunch </li>
-        <li>Gender Neutral Restrooms</li>
+      <ul class="business-details-ul">
+        <li>Delivery  <span>{yesorno(business.delivery)}</span></li>
+        <li>Takeout  <span>{yesorno(business.takeout)}</span></li>
+        <li>Outdoor Seating <span>{yesorno(business.outdoor_seating)}</span></li>
+        <li>Dogs Allowed  <span>{yesorno(business.dogs_allowed)}</span></li>
+        <li>Full bar  <span>{yesorno(business.full_bar)}</span></li>
+        <li>Breakfast  <span>{yesorno(business.breakfast)}</span></li>
+        <li>Lunch  <span>{yesorno(business.lunch)}</span></li>
+        <li>Dinner  <span>{yesorno(business.dinner)}</span></li>
+        <li>Brunch  <span>{yesorno(business.brunch)}</span></li>
+        <li>Gender Neutral Restrooms
+          <span>{yesorno(business.gender_neutral_restrooms)}</span></li>
       </ul>
     </div>
   </div>
@@ -53,10 +54,10 @@ const BusinessShowBot = ({business}) => (
 
 function yesorno(arg){
   if (arg === true) {
-    return " yes";
+    return "Yes";
   }
   else{
-    return " no";
+    return "No";
   }
 }
 

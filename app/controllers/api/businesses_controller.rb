@@ -1,9 +1,19 @@
 class Api::BusinessesController < ApplicationController
 
   def index
-    @business = Business.all
+    # @business = Business.all
+    # render :index
 
-    render :index
+    if params['YOLO']
+      #find by params[yolo] that matches columns and whatever
+      #@business = the return of the previous line
+      #render index
+    else
+      @business = Business.all
+      render :index
+
+
+    end 
   end
 
   def show

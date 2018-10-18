@@ -1,10 +1,10 @@
-import SearchIndexForm from './search_index';
+import SearchMain from './search_main';
 import { connect } from  'react-redux';
 import { login } from  '../../actions/session_actions.js';
 // import React from 'react'; //Why this?
 
 const mapDispatchToProps = dispatch => ({
-  // login: (user) => dispatch(login(user))
+  searchbiz: (arg) => dispatch()
 });
 
-export default connect(null, mapDispatchToProps)(SearchIndexForm);
+export default connect(null, mapDispatchToProps)(SearchMain);

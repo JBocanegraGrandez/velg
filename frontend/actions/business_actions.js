@@ -44,6 +44,12 @@ export const fetchBusinesses = () => dispatch => (
   ))
 );
 
+export const fetchTheMatchesBusinesses = (arg) => dispatch => (
+  APIUtil.getBusinesses().then(businesses => (
+    dispatch(receiveBusinesses(businesses))
+  ))
+);
+
 export const fetchBusiness = id => dispatch => {
   return APIUtil.getBusiness(id).then(business => {
     return dispatch(receiveBusiness(business));

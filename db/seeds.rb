@@ -9,12 +9,28 @@ Business.destroy_all
 Review.destroy_all
 User.destroy_all
 
+
+User.create!(
+  email: 'demo@demo.com',
+  password: 'demodemo',
+  first_name: 'Guest',
+  last_name: 'Demo',
+  zipcode: 94521
+)
+
 User.create!(
   email: 'chuck@norris.com',
   password: 'chuckchuck',
   first_name: 'Chuck',
   last_name: 'Norris',
   zipcode: 94521
+)
+User.create!(
+  email: 'brat@pizza.com',
+  password: 'bratbrat',
+  first_name: 'Brat',
+  last_name: 'Pizza',
+  zipcode: 94523
 )
 
 Business.create!(
@@ -161,11 +177,40 @@ Review.create!(
 
     Cannot wait to come back, might be my new favorite SF spot!
 
-
   REVIEW
-  author_id: 1,
+  author_id: 2,
   business_id: 1,
   useful: 2,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+  Octopus app: 5/5 delicious deep smoky flavor and the octopus is so \
+   deliciously tender. Didn't know octopus could be so tender.
+
+Oysters: 5/5 some of the meatiest, most delicious and fresh oysters I've had. \
+The sauce you pour onto each oyster has a good balance of heat and acid. \
+It was delicious!
+
+Pork chop: 5/5 sweetness that reminds of charsiu. Ate it all, fat and all! \
+The potatoes and asparagus that comes with it is also yummy. As were the thin\
+ crisps of, could it be taro?
+
+Sea bass: 4/5. The sea bass itself? It was a 5/5. So deliciously tender \
+and buttery. Perfectly cooked and melts in your mouth! But the sauce needs \
+some work, the green beans are super plain \
+(though well cooked), and the noodles a bit plain and salty. Maybe some more \
+garlic to the noodles to add some flavor? Maybe a bit more acid, \
+like lemon, to brighten it up? Something is missing.
+
+Wasabi noodles: 4.5/5 the pork was a bit dry. Appreciated the kimchi \
+like flavors throughout the dish. Well balanced and tasty. Not too spicy.
+
+  REVIEW
+  author_id: 3,
+  business_id: 1,
+  useful: 1,
   cool: 0,
   funny: 1,
 )
