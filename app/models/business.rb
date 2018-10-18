@@ -8,6 +8,14 @@ foreign_key: :business_id,
 class_name: :Review
 
 
+  def self.search_businesses(arg)
 
+  a = (Business.where("restaurant_name LIKE (?)", "%#{arg}%").map {|el| el}) +
+    (Business.where("restaurant_name LIKE (?)", "%#{arg.downcase}%").map {|el| el}) +
+    (Business.where("restaurant_name LIKE (?)", "%#{arg.upcase}%").map {|el| el}) +
+    (Business.where("restaurant_name LIKE (?)", "%#{arg.capitalize}%").map {|el| el})
+
+  a.uniq
+  end
 
 end

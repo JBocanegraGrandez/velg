@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
 import HeaderMain from '../header/header_main';
-import SearchMain from '../menu/search_main';
+import SearchMain from '../menu/search_container';
 
 
 

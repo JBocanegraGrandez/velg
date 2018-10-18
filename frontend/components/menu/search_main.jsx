@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import { withRouter, Link } from 'react-router-dom';
 class SearchMain extends React.Component{
   constructor(props){
     super(props);
@@ -11,6 +10,10 @@ class SearchMain extends React.Component{
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  componentDidMount() {
+    // this.props.searchbiz(this.state.search);
+  }
+
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
@@ -19,12 +22,12 @@ class SearchMain extends React.Component{
 
   handleSubmit(e) {
     e.preventDefault();
-    this.search();
+    this.search(this.state.search);
   }
 
-  search() {
+  search(arg) {
     console.log('works');
-    // this.props.searchbiz().then(push history thingy)
+    this.props.searchbiz(arg).then((res) => this.props.history.push(`/business/${res.businesses.id}`));
 
   }
 
@@ -69,4 +72,4 @@ class SearchMain extends React.Component{
 
 
 
-export default SearchMain;
+export default withRouter(SearchMain);

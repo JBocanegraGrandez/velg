@@ -34,7 +34,7 @@ const BusinessShowBot = ({business}) => (
     </div>
     <div className="business-details">
       <h3>More business info</h3>
-      <ul class="business-details-ul">
+      <ul className="business-details-ul">
         <li>Delivery  <span>{yesorno(business.delivery)}</span></li>
         <li>Takeout  <span>{yesorno(business.takeout)}</span></li>
         <li>Outdoor Seating <span>{yesorno(business.outdoor_seating)}</span></li>

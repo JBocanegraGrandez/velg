@@ -3,13 +3,16 @@ import merge from 'lodash/merge';
 import {
   RECEIVE_REVIEW,
   RECEIVE_BUSINESS,
-  RECEIVE_BUSINESSES
+  RECEIVE_BUSINESSES,
+  RECEIVE_BUSINESSES_SEARCH
 } from '../actions/business_actions';
 
 const businessesReducer = (state = {}, action) => {
   Object.freeze(state);
   switch(action.type) {
     case RECEIVE_BUSINESSES:
+      return action.businesses;
+    case RECEIVE_BUSINESSES_SEARCH:
       return action.businesses;
     case RECEIVE_BUSINESS:
       const newBusiness = { [action.id]: action };
