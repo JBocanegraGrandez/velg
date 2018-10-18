@@ -5,6 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Business.destroy_all
+Review.destroy_all
+User.destroy_all
+
+User.create!(
+  email: 'chuck@norris.com',
+  password: 'chuckchuck',
+  first_name: 'Chuck',
+  last_name: 'Norris',
+  zipcode: 94521
+)
 
 Business.create!(
   restaurant_name: 'The House',
@@ -130,4 +141,31 @@ Business.create!(
   breakfast: true,
   lunch: true,
   dinner: true,
+)
+
+Review.create!(
+  body: <<~REVIEW,
+    Finally made it to The House, and it lived up to all of their amazing \
+    reviews. Highly recommended for a date night, or a good spot to take the \
+    parents. It's small and cozy, so not great for a big group.
+
+    What we ordered:
+    -Salmon rolls
+    -Sea Bass
+    -Wasabi noodles
+
+    All 5 stars. Would come back to eat the salmon \
+    rolls and sea bass again and again.
+
+    The service is quick, the food was delicious, the wine was good.
+
+    Cannot wait to come back, might be my new favorite SF spot!
+
+
+  REVIEW
+  author_id: 1,
+  business_id: 1,
+  useful: 2,
+  cool: 0,
+  funny: 1,
 )

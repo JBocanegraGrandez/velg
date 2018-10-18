@@ -35,13 +35,13 @@ const BusinessShowBot = ({business}) => (
     <div className="business-details">
       <h3>More business info</h3>
       <ul>
-        <li>Delivery </li>
-        <li>Takeout </li>
+        <li>Delivery {yesorno(business.delivery)}</li>
+        <li>Takeout {yesorno(business.takeout)}</li>
         <li>Outdoor Seating </li>
         <li>Dogs Allowed </li>
         <li>Full bar </li>
         <li>Breakfast </li>
-        <li>Lunch </li>
+        <li>Lunch {yesorno(business.lunch)}</li>
         <li>Dinner </li>
         <li>Brunch </li>
         <li>Gender Neutral Restrooms</li>
@@ -50,5 +50,14 @@ const BusinessShowBot = ({business}) => (
   </div>
   </div>
 );
+
+function yesorno(arg){
+  if (arg === true) {
+    return " yes";
+  }
+  else{
+    return " no";
+  }
+}
 
 export default BusinessShowBot;

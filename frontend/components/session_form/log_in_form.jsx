@@ -20,10 +20,21 @@ class LogInForm extends React.Component {
     });
   }
 
+  demo(e) {
+    e.preventDefault();
+    this.setState({email:'demo@demo.com', password:'demodemo'}, () =>(
+      setTimeout(()=>(this.ogLogin(e)), 1000)
+    ));
+  }
+
   handleSubmit(e) {
     e.preventDefault();
+    this.ogLogin(e);
+  }
+
+  ogLogin(e) {
     const user = Object.assign({}, this.state);
-    this.props.login(user).then(()=> this.props.history.push('/'));
+    this.props.login(user);
   }
 
   renderErrors() {
@@ -89,7 +100,7 @@ class LogInForm extends React.Component {
                   required
                 />
               <div className="question">
-              <p className="fine-print"><Link to="/" className="link">Forgot password?</Link></p>
+              <p className="fine-print"><a onClick={this.demo.bind(this)} className="link">Demo Log in?</a></p>
               </div>
               <button className="red-button"
                 type="submit">Log In</button>

@@ -41,8 +41,8 @@ class Api::UsersController < ApplicationController
         # format.json { render json: @user.errors, status: :unprocessable_entity }
         render json: @user.errors.full_messages, status: 422
       end
-    end
   end
+end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json

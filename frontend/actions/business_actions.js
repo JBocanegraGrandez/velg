@@ -10,7 +10,8 @@ export const receiveBusinesses = businesses => ({
 });
 
 export const receiveBusiness = ({
-  restaurantName, street, neighborhood, city, state, zipcode, id }) => ({
+  restaurantName, street, neighborhood, city, state, zipcode,
+  id, delivery, takeout }) => ({
   type: RECEIVE_BUSINESS,
   restaurant_name: restaurantName,
   street,
@@ -18,7 +19,10 @@ export const receiveBusiness = ({
   city,
   state,
   zipcode,
-  id
+  id,
+  delivery,
+  takeout
+
 });
 
 export const receiveReview = ({ review, average_rating, author }) => ({
@@ -40,8 +44,8 @@ export const fetchBusinesses = () => dispatch => (
   ))
 );
 
-export const fetchBusiness = id => dispatch => (
-  APIUtil.getBusiness(id).then(business => (
-    dispatch(receiveBusiness(business))
-  ))
-);
+export const fetchBusiness = id => dispatch => {
+  return APIUtil.getBusiness(id).then(business => {
+    return dispatch(receiveBusiness(business));
+  });
+};

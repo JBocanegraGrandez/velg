@@ -119,7 +119,7 @@ class BusinessShowTop extends React.Component {
             <div className="show-bot-main-container">
               <div className="show-bot-reviews-container"></div>
               <div className="show-bot-business-details-right">
-                <BusinessShowBot />
+                <BusinessShowBot business={this.props.business}/>
               </div>
             </div>
           </div>
