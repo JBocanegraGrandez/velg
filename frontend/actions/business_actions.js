@@ -16,7 +16,7 @@ export const receiveBusinessesSearch = businesses => ({
 
 export const receiveBusiness = ({
   restaurantName, street, neighborhood, city, state, zipcode,
-  id, delivery, takeout }) => ({
+  id, delivery, takeout, reviews }) => ({
 
     type: RECEIVE_BUSINESS,
     restaurant_name: restaurantName,
@@ -27,7 +27,8 @@ export const receiveBusiness = ({
     zipcode,
     id,
     delivery,
-    takeout
+    takeout,
+    reviews
 });
 
 export const receiveReview = ({ body, businessId, authorId,

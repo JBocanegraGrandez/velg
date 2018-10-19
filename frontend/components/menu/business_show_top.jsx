@@ -2,7 +2,8 @@ import React from 'react';
 import HeaderSearch from '../header/header_search';
 import { Link } from 'react-router-dom';
 import BusinessShowBot from "./business_show_bot";
-import BusinessReviews from "../reviews/review_show_form";
+// import BusinessReviews from "../reviews/review_show_form";
+import BusinessReviews from "../reviews/review_show_funtional_container";
 
 class BusinessShowTop extends React.Component {
   componentDidMount() {
@@ -47,7 +48,7 @@ class BusinessShowTop extends React.Component {
                 <div className='right-biz-header'>
                   <div className='review-button-container'>
                     <button className='write-review'>
-                      (star) Write a Review
+                      <i className="far fa-star"></i> Write a Review
                     </button>
                   </div>
                   <div className='social-button-container'>

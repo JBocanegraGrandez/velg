@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Velg Heroku](https://velg.herokuapp.com/#/)
 
-Things you may want to cover:
+This is a Yelp alike site focusing on vegan alternatives. It provides the main
+functions you will find in a website like yelp:
 
-* Ruby version
+* User auth with Demo Log in
 
-* System dependencies
+* Business Search
 
-* Configuration
+* Business Show
 
-* Database creation
+Additional notes:
 
-* Database initialization
+* Ruby version 2.5.1
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This repo includes a seed file. Make sure to run the seed command before using this app.
