@@ -183,10 +183,12 @@
   height: 24px;
   width: 132px;
   margin-right: 6px;
-  background-color: red;
-  background-image: url(http://images.nymag.com/news/intelligencer/intelposts120326_starstruck_560.jpg);
-  background-position: center;
-  background-size: cover;
+  // background-color: red;
+  // background-image: url(http://images.nymag.com/news/intelligencer/intelposts120326_starstruck_560.jpg);
+  background-image: image-url('extra_large/extra_large_4_half@3x.png');
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-size: contain;
 }
 
 .rating-container span{

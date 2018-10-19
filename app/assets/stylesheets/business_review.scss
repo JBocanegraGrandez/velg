@@ -130,9 +130,10 @@
   width: 102px;
   margin-right: 6px;
   margin-top: -1px;
-  background-image: image-url('regular/regular_4.png');
+  background-image: image-url('regular/regular_4@3x.png');
   background-repeat: no-repeat;
-  background-position: center;
+  // background-position: center;
+  background-size: contain;
 }
 
 .business-review-date {
