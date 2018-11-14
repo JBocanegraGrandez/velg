@@ -12,6 +12,7 @@ import HeaderMainContainer from './header/header_main';
 import SignUpFormContainer from './session_form/sign_up_container';
 import LogInFormContainer from './session_form/log_in_container';
 import SearchIndexForm from './menu/search_index';
+import FooterMain from './menu/footer';
 import BusinessShowTop from './menu/business_show_top_container';
 import { AuthRoute } from "../util/route_util.jsx";
 
@@ -31,6 +32,9 @@ const App = () => (
       <Route path='/' component={SearchIndexForm} />
 
     </Switch>
+    <footer>
+      <FooterMain/>
+    </footer>
   </div>
 );
 

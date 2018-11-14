@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { login } from '../../actions/session_actions';
 import HeaderMain from '../header/header_main';
 import SearchMain from '../menu/search_container';
-
+import MainBot from './main_bot';
 
 
   const SearchIndexForm = () => (
@@ -38,6 +38,7 @@ import SearchMain from '../menu/search_container';
           </div>
         </div>
       </div>
+      <MainBot />
     </div>
   );
 

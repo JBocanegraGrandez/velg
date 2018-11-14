@@ -20,7 +20,7 @@ class BusinessReviews extends React.Component{
                 <div>
                   <div className="review-title">
                     <h3 className='review-title-container'>Recommended Review</h3>
-                    <div className="for-this-restaurant">for {this.props.restaurantName}</div>
+                    <div className="for-this-restaurant">for {this.props.current_biz.restaurant_name}</div>
                   </div>
                   {reviewArr.map((review) =>{
 
@@ -34,7 +34,7 @@ class BusinessReviews extends React.Component{
                         </div>
                         <div className="business-review-details">
                           <div className='business-review-author-name'>
-                            Chuck N.
+                            Chuck N. {review.author}
                           </div>
                           <div className='business-review-author-info'>
                             <span className="span-icon">(I)</span><span className="span-number">16</span><span className="span-text">reviews</span>
