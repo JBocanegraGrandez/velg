@@ -7,7 +7,6 @@ class BusinessReviews extends React.Component{
   }
 
   render() {
-
     if (!this.props.current_biz.reviews) {
       return <div></div>;
     }
@@ -23,7 +22,6 @@ class BusinessReviews extends React.Component{
                     <div className="for-this-restaurant">for {this.props.current_biz.restaurant_name}</div>
                   </div>
                   {reviewArr.map((review) =>{
-
                     return(
 
 
@@ -34,7 +32,7 @@ class BusinessReviews extends React.Component{
                         </div>
                         <div className="business-review-details">
                           <div className='business-review-author-name'>
-                            Chuck N. {review.author}
+                            {review.author.first_name} {review.author.last_name[0]}
                           </div>
                           <div className='business-review-author-info'>
                             <span className="span-icon">(I)</span><span className="span-number">16</span><span className="span-text">reviews</span>
@@ -50,7 +48,7 @@ class BusinessReviews extends React.Component{
                         <div className='business-review-stars'>
                         </div>
                         <div className='business-review-date'>
-                          {reviews.created_at}
+                          {review.createdAt.slice(0,10)}
                         </div>
                       </div>
                       <div className='review-body-container-main'>

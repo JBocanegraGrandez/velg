@@ -14,6 +14,7 @@ import LogInFormContainer from './session_form/log_in_container';
 import SearchIndexForm from './menu/search_index';
 import FooterMain from './menu/footer';
 import BusinessShowTop from './menu/business_show_top_container';
+import BusinessIndex from './menu/business_index';
 import { AuthRoute } from "../util/route_util.jsx";
 
 
@@ -29,8 +30,8 @@ const App = () => (
       <Route exact path="/login" component={LogInFormContainer} />
       <Route exact path="/signup" component={SignUpFormContainer} />
       <Route exact path="/business/:id" component={BusinessShowTop} />
-      <Route path='/' component={SearchIndexForm} />
-
+      <Route exact path='/' component={SearchIndexForm} />
+      <Route path='/search' component={BusinessIndex} />
     </Switch>
     <footer>
       <FooterMain/>

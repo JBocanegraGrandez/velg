@@ -3,14 +3,14 @@ const BusinessShowBot = ({business}) => (
   <div className="business-show-bot-container">
     <div className="hours-container">
       <div className="today">
-        <div className="icon-today">Icon</div>
+        <div className="icon-today"><i className="far fa-clock"></i></div>
         <div className="time-today">
           <span className="key">Today</span>
           <span className="value">5:00 pm - 9:30 pm</span>
         </div>
       </div>
       <div className="price-range-side">
-        <div className="icon-today">Icon</div>
+        <div className="icon-today"> </div>
         <div className="time-today-2">
           <span className="key">Price Range</span>
           <span className="value">$11-30</span>
