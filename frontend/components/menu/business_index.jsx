@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 import BusinessShowBot from "./business_show_bot";
 // import BusinessReviews from "../reviews/review_show_form";
 import BusinessReviews from "../reviews/review_show_funtional_container";
-import HeaderAuth from "../header/header_auth";
+// import HeaderSearch from "../header/header_search";
 
-class BusinessShowTop extends React.Component {
+class BusinessIndex extends React.Component {
   // componentDidMount() {
   //   this.props.fetchBusiness(this.props.businessId);
   // }
@@ -17,12 +17,30 @@ class BusinessShowTop extends React.Component {
   //   }
   // }
   render(){
+    if (!this.props.businesses[0]) {
+      return (
+        <div>
+          <HeaderSearch/>
+          <div className="business-index-top-shelf">
+            <div className="top-shelf-content-container">
+              <h1>No Result matched&nbsp;<span>in Velg</span></h1>
+            </div>
+          </div>
+          <div className="business-index-main">
+            <div className="business-index-business-column">
+            </div>
+          </div>
+      </div>);
+    }
+    const businesses = this.props.businesses;
+
+    const businessesArr = Object.values(businesses);
       // if (this.props.business === undefined){
       //   return null;
       // }
     return(
       <div>
-        <HeaderAuth/>
+        <HeaderSearch/>
         <div className="business-index-top-shelf">
           <div className="top-shelf-content-container">
             <h1>Best something&nbsp;<span>in Velg</span></h1>
@@ -31,6 +49,8 @@ class BusinessShowTop extends React.Component {
         <div className="business-index-main">
           <div className="business-index-business-column">
             <ul>
+              {businessesArr.map((business) => {
+                return(
               <li>
                 <div className="business-index-single-wrapper">
                   <div className="business-index-pic">
@@ -38,7 +58,7 @@ class BusinessShowTop extends React.Component {
                   <div className="business-index-info">
                     <div className="business-index-single-info-top">
                       <div className="info-left">
-                        <h1><span>1.</span>&nbsp;<a className="link">Business Title</a></h1>
+                        <h1><span>1.</span>&nbsp;<Link to={`business/${business.id}`} className="link">{business.restaurantName}</Link></h1>
                         <div className="business-index-review">
                           <div className="bus-rating"></div>
                         </div>
@@ -48,9 +68,9 @@ class BusinessShowTop extends React.Component {
                         </div>
                       </div>
                       <div className="info-right">
-                        <span>Street</span>
-                        <span>neighborhood</span>
-                        <span>City, State</span>
+                        <span>{business.street}</span>
+                        <span>{business.neighborhood}</span>
+                        <span>{business.city}, {business.state}</span>
                       </div>
                     </div>
                     <div className="business-index-single-info-bottom">
@@ -60,6 +80,8 @@ class BusinessShowTop extends React.Component {
                   </div>
                 </div>
               </li>
+            );})
+            }
             </ul>
           </div>
           <div className="business-index-map-column">
@@ -70,4 +92,4 @@ class BusinessShowTop extends React.Component {
   }
 }
 
-export default BusinessShowTop;
+export default BusinessIndex;

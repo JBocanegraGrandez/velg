@@ -27,7 +27,7 @@ class SearchMain extends React.Component{
 
   search(arg) {
     console.log('works');
-    this.props.searchbiz(arg).then((res) => this.props.history.push(`/business/${res.businesses.id}`));
+    this.props.searchbiz(arg).then((res) => this.props.history.push(`/search`));
 
   }
 

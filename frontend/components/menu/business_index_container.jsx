@@ -4,12 +4,11 @@ import { fetchBusiness } from '../../actions/business_actions';
 import { withRouter } from 'react-router-dom';
 
 export const mapStateToProps = (state, ownProps)=> ({
-  business: state.entities.business[ownProps.match.params.id],
-  businessId: ownProps.match.params.id
+  businesses: state.search_businesses,
 });
 
-export const mapDispatchToProps = dispatch => ({
-  fetchBusiness: (id) => dispatch(fetchBusiness(id))
-});
+// export const mapDispatchToProps = dispatch => ({
+//   fetchBusiness: (id) => dispatch(fetchBusiness(id))
+// });
 
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(BusinessIndex));
+export default withRouter(connect(mapStateToProps, null)(BusinessIndex));

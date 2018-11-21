@@ -3,7 +3,7 @@ class Api::BusinessesController < ApplicationController
   def index
     # @business = Business.all
     # render :index
-    @result = Business.search_businesses(params[:data])
+    @businesses = Business.search_businesses(params[:data])
     # debugger
     # if params['YOLO']
     #   #find by params[yolo] that matches columns and whatever
@@ -16,11 +16,11 @@ class Api::BusinessesController < ApplicationController
     #
     # end
 
-    if @result
-      render 'api/search/show'
+    if @businesses
+      render 'api/businesses/index'
     else
-      @business = Business.all
-      render 'api/businesses/show'
+      @businesses = Business.all
+      render 'api/businesses/index'
     end
   end
 
