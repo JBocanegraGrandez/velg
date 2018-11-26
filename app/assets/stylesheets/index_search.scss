@@ -21,6 +21,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: bottom;
+  background-size: cover;
   // background-size: 1700px;
   // opacity:  0.8;
   height: 550px;
@@ -192,11 +193,18 @@
 .logo-background {
   height: 160px;
   width: 250px;
-  // width: 100%;
-  // height: 100%;
-  // padding-top: 50px;
-  background-image: image-url('logo.png');
-  background-size: contain;
+  background-image: image-url('velg_logo.png');
+  // background-size: contain;
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+.logo-background-mini {
+  height: 50px;
+  width: 100px;
+  margin-top: 12px;
+  background-image: image-url('velg_logo.png');
+  // background-size: contain;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 

@@ -10,16 +10,14 @@
 
 .header-logo {
   // background-color: orange;
-  background-image: image-url('logo.png');
-  background-size: cover;
+  background-image: image-url('velg_logo.png');
+  background-size: 90%;
   background-repeat: no-repeat;
   // vertical-align: middle;
-  width: 96px;
-  height: 66px;
+  width: 100px;
+  height: 50px;
   margin-right: 4px;
 
-  background-position-y: -14px;
-  background-position-x: -10px
 }
 
 .search-cont {
