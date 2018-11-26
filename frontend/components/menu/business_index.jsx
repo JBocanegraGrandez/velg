@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderSearch from '../header/header_search';
 import { Link } from 'react-router-dom';
 import BusinessShowBot from "./business_show_bot";
+import BusinessMap from "../map/business_map";
 // import BusinessReviews from "../reviews/review_show_form";
 import BusinessReviews from "../reviews/review_show_funtional_container";
 // import HeaderSearch from "../header/header_search";
@@ -85,6 +86,7 @@ class BusinessIndex extends React.Component {
             </ul>
           </div>
           <div className="business-index-map-column">
+            <BusinessMap />
           </div>
         </div>
       </div>
