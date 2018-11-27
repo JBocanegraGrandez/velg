@@ -86,7 +86,7 @@ class BusinessIndex extends React.Component {
             </ul>
           </div>
           <div className="business-index-map-column">
-            <BusinessMap />
+            <BusinessMap businesses={businesses} />
           </div>
         </div>
       </div>

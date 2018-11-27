@@ -50,6 +50,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: true,
   takeout: true,
+  lat: 37.798459,
+  lng: -122.407093,
 )
 Business.create!(
   restaurant_name: 'Shizen Vegan Sushi Bar & Izakaya',
@@ -68,6 +70,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: true,
   takeout: false,
+  lat: 37.768328,
+  lng: -122.421641,
 )
 Business.create!(
   restaurant_name: 'Ananda Fuara',
@@ -86,6 +90,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: true,
   takeout: false,
+  lat: 37.777899,
+  lng: -122.416265,
 )
 Business.create!(
   restaurant_name: 'Gracias Madre',
@@ -104,6 +110,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: false,
   takeout: true,
+  lat: 34.081043,
+  lng: -118.386897,
 )
 Business.create!(
   restaurant_name: 'Indochine Vegan',
@@ -122,6 +130,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: false,
   takeout: true,
+  lat: 37.764626,
+  lng: -122.42216,
 )
 Business.create!(
   restaurant_name: 'Vegan Picnic',
@@ -140,6 +150,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: false,
   takeout: true,
+  lat: 37.797418,
+  lng: -122.431642,
 )
 
 Business.create!(
@@ -157,6 +169,8 @@ Business.create!(
   breakfast: true,
   lunch: true,
   dinner: true,
+  lat: 37.788232,
+  lng: -122.414592,
 )
 
 Review.create!(

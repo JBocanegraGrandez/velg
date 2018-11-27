@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import BusinessShowBot from "./business_show_bot";
 // import BusinessReviews from "../reviews/review_show_form";
 import BusinessReviews from "../reviews/review_show_funtional_container";
+import BusinessMapLittle from "../map/business_map_little";
 
 class BusinessShowTop extends React.Component {
   componentDidMount() {
@@ -59,6 +60,7 @@ class BusinessShowTop extends React.Component {
                 <div className="map-container">
                   <div className="map-info">
                     <div className="map-top">
+                      <BusinessMapLittle business={this.props}/>
                     </div>
                     <div className="map-bot">
                       <ul>
