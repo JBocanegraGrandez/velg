@@ -1,18 +1,41 @@
-# README
+# Velg
 
-[Velg Heroku](https://velg.herokuapp.com/#/)
+[Velg Heroku live](https://velg.herokuapp.com/#/)
 
-This is a Yelp alike site focusing on vegan alternatives. It provides the main
-functions you will find in a website like yelp:
+Velg is a Yelp clone site that allows users to browse vegan friendly business. Aditionally users can view and write reviews.
 
-* User auth with Demo Log in
 
-* Business Search
+## Technologies
+  ### Backend:
+    Ruby on Rails (2.5.1)
+    PostgreSQL as database
+  ### Frontend:
+    React.js
+    Redux
+    Html/CSS
+  ### API CALLS
+    Google Maps
+    
+## Features
+  Maintain User Auth security Frontend-Backend via BCrypt
+  Users can search business by name or category
+  Search Results are showed in google maps using GoogleMap API 
+  
+  ### Search 
 
-* Business Show
+  Users can look up for businesses by typing part/all of the business name or category. The default location is San Francisco.
+  
+  The center of the map the location of the first search result. If there is no matching result, the map won't be rendered.
 
+  ### Showing Business Pictures
+  
+  Each business has only 3 pictures showing at a time in the business show page.
+  The picture in the middle is bigger and stands out from the rest. However when the user hovers on another picture. That picture will pop out.
+  
+  I acomplished this by using transitions on CSS:
+  
+  
+  
 Additional notes:
-
-* Ruby version 2.5.1
 
 This repo includes a seed file. Make sure to run the seed command before using this app.
