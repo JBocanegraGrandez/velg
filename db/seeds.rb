@@ -52,6 +52,8 @@ Business.create!(
   takeout: true,
   lat: 37.798459,
   lng: -122.407093,
+  cat1: "Asian Fusion",
+  cat2: "",
 )
 Business.create!(
   restaurant_name: 'Shizen Vegan Sushi Bar & Izakaya',
@@ -72,6 +74,8 @@ Business.create!(
   takeout: false,
   lat: 37.768328,
   lng: -122.421641,
+  cat1: "Sushi Bars",
+  cat2: "Izakaya",
 )
 Business.create!(
   restaurant_name: 'Ananda Fuara',
@@ -92,6 +96,8 @@ Business.create!(
   takeout: false,
   lat: 37.777899,
   lng: -122.416265,
+  cat1: "Breakfast",
+  cat2: "",
 )
 Business.create!(
   restaurant_name: 'Gracias Madre',
@@ -112,6 +118,8 @@ Business.create!(
   takeout: true,
   lat: 34.081043,
   lng: -118.386897,
+  cat1: "Mexican",
+  cat2: "Breakfast",
 )
 Business.create!(
   restaurant_name: 'Indochine Vegan',
@@ -132,6 +140,8 @@ Business.create!(
   takeout: true,
   lat: 37.764626,
   lng: -122.42216,
+  cat1: "Asian Fusion",
+  cat2: "Seafood",
 )
 Business.create!(
   restaurant_name: 'Vegan Picnic',
@@ -152,6 +162,8 @@ Business.create!(
   takeout: true,
   lat: 37.797418,
   lng: -122.431642,
+  cat1: "Sandwiches",
+  cat2: "Gluten-Free",
 )
 
 Business.create!(
@@ -171,6 +183,8 @@ Business.create!(
   dinner: true,
   lat: 37.788232,
   lng: -122.414592,
+  cat1: "Bars",
+  cat2: "American Seafood"
 )
 
 Review.create!(
@@ -243,7 +257,7 @@ Review.create!(
   Service was decent once they realized we were there but we sat for about 15 minutes before a waiter came over to us. The soup was incredibly delicious. My friend tried a bite of my soup and then instantly ordered one for herself. Entrees were ok but not memorable. The sea bass is a full fish so be ready for that. The orecchiette had large raw greens that overshadowed the yummy pasta. Seemed like the greens were used to fill the bowl but they detracted from the pasta itself. Ambiance is cute and the vibe is lively but quiet enough for an easy conversation
 
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 2,
   useful: 1,
   cool: 0,
@@ -255,7 +269,7 @@ Review.create!(
   Such a good place to have a meal. Quaint upstairs restaurant in the middle of the Castro district. The food is really good and moderately priced (3 cocktails, 2 starters, 4 mains, 1 dessert = $145 more than enough for 4 ppl -- could have gotten 3 mains). Good for sharing. Pastas are homemade. Service is authentic Italian.
 
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 2,
   useful: 1,
   cool: 0,
@@ -292,7 +306,7 @@ Review.create!(
   The staff were so friendly! I had a really amazing time and enjoyed all of my food. It was so delicious! I especially enjoyed the squid ink pasta. Also, all of the servers were incredibly handsome and friendly! The wine selection was outstanding.
 
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 3,
   useful: 1,
   cool: 0,
@@ -304,7 +318,7 @@ Review.create!(
 Really good Italian restaurant in the Castro. Came here after happy hour with friends and we had a great time.  Ordered the burrata, crostini and branzino and everything was great.  Service and ambiance were also excellent.
 
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 4,
   useful: 1,
   cool: 0,
@@ -324,7 +338,7 @@ Review.create!(
   body: <<~REVIEW,
 Food is awesome as always... however... the kitchen was a disaster at getting things out in a timely manner... had to cancel our appetizer Bc the main courses were coming out beforehand. We'd ordered the appetizer 25 min before the main course so we could have it with our wine. I'll be back.. not my first time here...  cheers
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 4,
   useful: 1,
   cool: 0,
@@ -357,7 +371,7 @@ Review.create!(
 
   My only real complaint about this place is the service. I'm not sure if they were understaffed or something but I was awkwardly waiting in the front for at least 5 minutes for anyone to even acknowledge me. The waiter also served us the wrong tables food and never really came to check on us during our meal (would not been too much of a problem but I really wanted some more water...)
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 5,
   useful: 1,
   cool: 0,
@@ -393,7 +407,7 @@ Review.create!(
 
   The place itself is small and very hip the decor is contemporary. I wasn't aware that the restaurant is Indian food I'm not a huge fan of Indian food but I have to say this one was very delicious. Plus it's vegetarian! I got the "chicken" sandwich it was delicious. Not too over priced but yet again it is San Francisco so you can expect to pay a decent amount for food
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 6,
   useful: 1,
   cool: 0,
@@ -415,7 +429,7 @@ Review.create!(
 
 I've had the neatloaf and TBM sandwich on ciabatta in the past. I also love their dal. This time we started with samosas (vegan and yummy) and I got the portobello quesadilla and dal lunch combo. My colleague got the neatloaf sandwich. Quesadilla was delicious and cheesy-large portion for lunch. Neatloaf is delicious here but dry (ask for extra sauce) and the texture of the loaf and the bread are very similar. Still delicious though and very filling!
   REVIEW
-  author_id: 2,
+  author_id: 3,
   business_id: 7,
   useful: 1,
   cool: 0,

@@ -17,6 +17,11 @@ class BusinessIndex extends React.Component {
   //     this.props.fetchBusiness(nextprops.businessId);
   //   }
   // }
+
+  search(arg) {
+    this.props.searchbiz(arg).then((res) => this.props.history.push(`/search`));
+  }
+
   render(){
     if (!this.props.businesses[0]) {
       return (
@@ -54,7 +59,7 @@ class BusinessIndex extends React.Component {
                 return(
               <li>
                 <div className="business-index-single-wrapper">
-                  <div className="business-index-pic">
+                  <div className="business-index-pic" background="../../app/assets/images/thehousemain.jpg">
                   </div>
                   <div className="business-index-info">
                     <div className="business-index-single-info-top">
@@ -65,7 +70,7 @@ class BusinessIndex extends React.Component {
                         </div>
                         <div className="business-index-tag">
                           <span>$$</span> &nbsp;·&nbsp;
-                          <span className="link">Ramen</span>
+                          <span onClick={() => this.search(business.cat1)}className="link">{business.cat1}</span>, <span onClick={() => this.search(business.cat2)} className="link"> {business.cat2}</span>
                         </div>
                       </div>
                       <div className="info-right">

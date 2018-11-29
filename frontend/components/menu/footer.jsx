@@ -13,7 +13,7 @@ import { login } from '../../actions/session_actions';
             <h3>About</h3>
             <ul>
               <li><a className="link" href="https://github.com/JBocanegraGrandez/velg">About Velg</a></li>
-              <li><a className="link" href="https://www.linkedin.com/in/j-bocanegra">About Developer</a></li>
+              <li><a className="link" href="https://jbcode.co">About Developer</a></li>
             </ul>
           </div>
           <div className="footer-title">

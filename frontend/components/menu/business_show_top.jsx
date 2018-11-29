@@ -16,6 +16,11 @@ class BusinessShowTop extends React.Component {
       this.props.fetchBusiness(nextprops.businessId);
     }
   }
+
+  search(arg) {
+    this.props.searchbiz(arg).then((res) => this.props.history.push(`/search`));
+  }
+
   render(){
       if (this.props.business === undefined){
         return null;
@@ -42,7 +47,7 @@ class BusinessShowTop extends React.Component {
                     </span>
                     &nbsp;·&nbsp;
                     <span className='category'>
-                      <a>Bars</a>, <a>American</a>,<a> Seafood</a>
+                      <a onClick={() => this.search(this.props.business.cat1)}>{this.props.business.cat1}</a>, <a onClick={() => this.search(this.props.business.cat2)}>{this.props.business.cat2}</a>
                     </span>
                   </div>
                 </div>
