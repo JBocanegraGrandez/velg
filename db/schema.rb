@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_27_233017) do
+ActiveRecord::Schema.define(version: 2018_11_30_001516) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 2018_11_27_233017) do
     t.float "lng"
     t.string "cat1"
     t.string "cat2"
+    t.string "img"
     t.index ["restaurant_name"], name: "index_businesses_on_restaurant_name"
   end
 

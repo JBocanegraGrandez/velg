@@ -6,7 +6,24 @@ import BusinessMap from "../map/business_map";
 // import BusinessReviews from "../reviews/review_show_form";
 import BusinessReviews from "../reviews/review_show_funtional_container";
 // import HeaderSearch from "../header/header_search";
+import main1 from "../../../app/assets/images/thehousemain.jpg";
+import main2 from "../../../app/assets/images/main2.jpg";
+import main3 from "../../../app/assets/images/main3.jpg";
+import main4 from "../../../app/assets/images/main4.jpg";
+import main5 from "../../../app/assets/images/main5.jpg";
+import main6 from "../../../app/assets/images/main6.jpg";
+import main7 from "../../../app/assets/images/main7.jpg";
 
+const coolPojo = {
+  "main1": main1,
+  "main2": main2,
+  "main3": main3,
+  "main4": main4,
+  "main5": main5,
+  "main6": main6,
+  "main7": main7,
+
+};
 class BusinessIndex extends React.Component {
   // componentDidMount() {
   //   this.props.fetchBusiness(this.props.businessId);
@@ -59,7 +76,7 @@ class BusinessIndex extends React.Component {
                 return(
               <li>
                 <div className="business-index-single-wrapper">
-                  <div className="business-index-pic" background="../../app/assets/images/thehousemain.jpg">
+                  <div className="business-index-pic" style={{ backgroundImage: `url(${coolPojo[business.img]})`, backgroundSize: "cover"}}>
                   </div>
                   <div className="business-index-info">
                     <div className="business-index-single-info-top">

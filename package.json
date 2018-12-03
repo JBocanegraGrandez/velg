@@ -43,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/JBocanegraGrandez/velg/issues"
   },
-  "homepage": "https://github.com/JBocanegraGrandez/velg#readme"
+  "homepage": "https://github.com/JBocanegraGrandez/velg#readme",
+  "devDependencies": {
+    "file-loader": "^2.0.0"
+  }
 }

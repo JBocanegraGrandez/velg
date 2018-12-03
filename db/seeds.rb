@@ -54,6 +54,7 @@ Business.create!(
   lng: -122.407093,
   cat1: "Asian Fusion",
   cat2: "",
+  img: "main1"
 )
 Business.create!(
   restaurant_name: 'Shizen Vegan Sushi Bar & Izakaya',
@@ -76,6 +77,7 @@ Business.create!(
   lng: -122.421641,
   cat1: "Sushi Bars",
   cat2: "Izakaya",
+  img: "main2"
 )
 Business.create!(
   restaurant_name: 'Ananda Fuara',
@@ -98,6 +100,7 @@ Business.create!(
   lng: -122.416265,
   cat1: "Breakfast",
   cat2: "",
+  img: "main3"
 )
 Business.create!(
   restaurant_name: 'Gracias Madre',
@@ -120,6 +123,7 @@ Business.create!(
   lng: -118.386897,
   cat1: "Mexican",
   cat2: "Breakfast",
+  img: "main4"
 )
 Business.create!(
   restaurant_name: 'Indochine Vegan',
@@ -142,6 +146,7 @@ Business.create!(
   lng: -122.42216,
   cat1: "Asian Fusion",
   cat2: "Seafood",
+  img: "main5"
 )
 Business.create!(
   restaurant_name: 'Vegan Picnic',
@@ -164,6 +169,7 @@ Business.create!(
   lng: -122.431642,
   cat1: "Sandwiches",
   cat2: "Gluten-Free",
+  img: "main6"
 )
 
 Business.create!(
@@ -184,7 +190,8 @@ Business.create!(
   lat: 37.788232,
   lng: -122.414592,
   cat1: "Bars",
-  cat2: "American Seafood"
+  cat2: "American Seafood",
+  img: "main7"
 )
 
 Review.create!(
