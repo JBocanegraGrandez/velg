@@ -18,7 +18,7 @@ import { login } from '../../actions/session_actions';
             </div>
             <div className="card-business-body">
               <div className="card-business-content">
-                <Link class="link" to="/business/1"><h3 className="card-content-title">The House</h3></Link>
+                <Link className="link" to="/business/1"><h3 className="card-content-title">The House</h3></Link>
                 <div className="card-stars"></div>
                 <div className="card-category">Bars, American Food</div>
                 <div className="card-city">San Francisco, CA</div>
@@ -32,7 +32,7 @@ import { login } from '../../actions/session_actions';
             </div>
             <div className="card-business-body">
               <div className="card-business-content">
-                <Link class="link" to="/business/3"><h3 className="card-content-title">Ananda Fuara</h3></Link>
+                <Link className="link" to="/business/3"><h3 className="card-content-title">Ananda Fuara</h3></Link>
                 <div className="card-stars"></div>
                 <div className="card-category">Desserts, Vegan</div>
                 <div className="card-city">San Francisco, CA</div>
@@ -46,7 +46,7 @@ import { login } from '../../actions/session_actions';
             </div>
             <div className="card-business-body">
               <div className="card-business-content">
-                <Link class="link" to="/business/7"><h3 className="card-content-title">Liholiho Yacht Club</h3></Link>
+                <Link className="link" to="/business/7"><h3 className="card-content-title">Liholiho Yacht Club</h3></Link>
                 <div className="card-stars"></div>
                 <div className="card-category">Bars, American Food</div>
                 <div className="card-city">San Francisco, CA</div>
