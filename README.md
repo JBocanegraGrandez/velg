@@ -2,7 +2,7 @@
 
 [Velg Heroku live](https://velg.herokuapp.com/#/)
 
-Velg is a Yelp clone site that allows users to browse vegan friendly business. Aditionally users can view and write reviews.
+Velg is a Yelp clone site that allows users to browse vegan friendly business
 
 
 ## Technologies
