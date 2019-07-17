@@ -167,7 +167,7 @@ Business.create!(
   takeout: true,
   lat: 37.797418,
   lng: -122.431642,
-  cat1: "Sandwiches",
+  cat1: "Burgers",
   cat2: "Gluten-Free",
   img: "main6"
 )
@@ -191,6 +191,113 @@ Business.create!(
   lng: -122.414592,
   cat1: "Bars",
   cat2: "American Seafood",
+  img: "main7"
+)
+
+Business.create!(
+  restaurant_name: 'VeganBurg',
+  street: "1466 Haight St",
+  neighborhood: 'The Haight',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: 94117,
+  delivery: true,
+  gender_neutral_restrooms: true,
+  takeout: true,
+  dogs_allowed: false,
+  full_bar: false,
+  breakfast: false,
+  lunch: true,
+  dinner: true,
+  lat: 37.770376,
+  lng: -122.446459,
+  cat1: "Burgers",
+  cat2: "Fast Food",
+  img: "main7"
+)
+
+Business.create!(
+  restaurant_name: 'Next Level Burger',
+  street: "450 Rhode Island St",
+  neighborhood: 'Potrero Hill',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: 94107,
+  delivery: true,
+  gender_neutral_restrooms: false,
+  takeout: true,
+  dogs_allowed: false,
+  full_bar: false,
+  breakfast: false,
+  lunch: true,
+  dinner: true,
+  lat: 37.764564,
+  lng: -122.403289,
+  cat1: "Burgers",
+  cat2: "Gluten-Free",
+  img: "main7"
+)
+Business.create!(
+  restaurant_name: 'Golden Era Vegan Restaurant',
+  street: "395 Golden Gate Ave",
+  neighborhood: 'Civic Center',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: 94102,
+  delivery: false,
+  gender_neutral_restrooms: false,
+  takeout: true,
+  dogs_allowed: false,
+  full_bar: false,
+  breakfast: false,
+  lunch: true,
+  dinner: true,
+  lat: 37.781270,
+  lng: -122.416633,
+  cat1: "Pho",
+  cat2: "Vietnamese",
+  img: "main7"
+)
+Business.create!(
+  restaurant_name: 'Yummy Yummy',
+  street: "1015 Irving St",
+  neighborhood: 'Inner Sunset',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: 94122,
+  delivery: true,
+  gender_neutral_restrooms: true,
+  takeout: true,
+  dogs_allowed: false,
+  full_bar: true,
+  breakfast: false,
+  lunch: true,
+  dinner: true,
+  lat: 37.763724,
+  lng: -122.468824,
+  cat1: "Chinese",
+  cat2: "Pho",
+  img: "main7"
+)
+Business.create!(
+  restaurant_name: 'Pho 2000',
+  street: "637 Larkin St",
+  neighborhood: 'Tenderloin',
+  city: 'San Francisco',
+  state: 'CA',
+  zipcode: 94109,
+  delivery: false,
+  gender_neutral_restrooms: true,
+  takeout: true,
+  dogs_allowed: false,
+  full_bar: false,
+  breakfast: false,
+  lunch: true,
+  dinner: true,
+  lat: 37.783883,
+  lng: -122.417881,
+  cat1: "Chinese",
+  cat2: "Noodles",
   img: "main7"
 )
 
@@ -438,6 +545,151 @@ I've had the neatloaf and TBM sandwich on ciabatta in the past. I also love thei
   REVIEW
   author_id: 3,
   business_id: 7,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+This place is just incredible. The Tangy Tartar is the stuff dreams are made of. It's absolutely my favorite menu item. My second favorite is the smoky BBQ with an Impossible patty. The fries are good but too expensive. A large serving of loaded fries is the same price as a burger. Still, this place gets 5 stars and I'll come back every chance I get. 
+
+Oh yeah, and they put an insane amount of red onion on each burger so you end up picking off a lot of it.
+  REVIEW
+  author_id: 2,
+  business_id: 8,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  If you're looking for some flavorful, satisfying, not your run of the mill vegan food, come here! The atmosphere is welcoming and the vibe puts you at ease. I had the pineapple burger, as well as a shared order or fries and "chicken nuggets". The meal was eaten in silence and quickly lol. The food was soo delicious. I could see this being a regular spot for me whenever I'm I  SF. It's worth a try for everyone.
+  REVIEW
+  author_id: 3,
+  business_id: 8,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  'Oh, you're back again!?' Lol.
+  The last time I stayed in the 'loin for a week, I spent three lunches here. I loved the service, and the All American just spoke to me in a filthy/sexy way. I started to tell everyone to order it. 
+  I've been veggie for a while, and I've dipped in and out of veganism, so sometimes I want a grain-and-veg-based party, and sometimes something really meat-like. This place has it all. But my proudest achievement has to be taking a meat-crazy friend from Texas and seeing the look on their face when they realized these burgers are both vegan and bomb!
+
+  REVIEW
+  author_id: 3,
+  business_id: 9,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  High expectations were quickly quashed upon receiving my order. Classic chzburger reminded me of the frozen veggie burgers from grocery store (morning star or boca). Had that distinctly artificial taste so familiar to processed veggie burgers. Ignoring that, it was nutritious and packed with protein so it was ok. 
+
+Big let down were the french fries. How they can fk up the most basic American side is beyond me. Burnt fries and half of them looked like the detritus you pick out of the fryer every few hours. They didn't even salt them...terrible.
+
+Total M.E.H rating for this place.
+
+  REVIEW
+  author_id: 2,
+  business_id: 9,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  I am blown away by the food here. I'm neither vegan nor vegetarian but this is officially one of my new favorite restaurants after my first visit! All four of our shared dishes were EXCELLENT. By far the best vegan food and tofu I've ever had. We had the lemongrass deluxe "chicken" (tofu) the Mama's Claypot (amazing) the royal fried rice and the avocado rolls. We didn't stop raving the entire meal. Meat lovers, don't miss out you won't regret giving this place a try. Great friendly fast service as well.
+
+  REVIEW
+  author_id: 2,
+  business_id: 10,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  I have become somewhat of a vegan Chinese food connoisseur since becoming vegan three years ago and I have eaten at some pretty solid places. Golden Era is hands down the best vegan Chinese food in the US that I have had so far and definitely my favorite in California. 
+
+  Go check this place if you're a vegan or really anyone and you have a Chinese food craving in SF.
+
+  REVIEW
+  author_id: 3,
+  business_id: 10,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  I would say hands down this is the best Vietnamese restaurant in San Francisco. Provided you can accept the fact that service's abrupt (like most traditional Asian restaurants in San Francisco), I think that you will find the service to be helpful and attentive. And the food is very good. 
+
+  Note:  make sure you go well in advance of closing time. The owner, who has a great personality, shuts down relatively early.  Although many restaurant owners might try to milk it to the end, he knows how to end on a high note.
+
+  REVIEW
+  author_id: 3,
+  business_id: 11,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  I usually go to Y&Y on Clement instead of here, since there's usually a high chance of a line with this restaurant.  I can barely remember the last time I ate at Yummy Yummy.  But the pho I had here was just amazing.  
+
+  Although my usual choice at Y&Y is the Five spice chicken with vermicelli, I decided to go with the Chicken noodle soup instead, and it was so good.  I didn't really have an appetite when I sat down, but once I had my first taste of the noodles, I was ready to eat.  The broth was so delicious, and the garlic included gave it an extra flavor.  
+
+  So good, a definite must to come again.
+
+  REVIEW
+  author_id: 2,
+  business_id: 11,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  Absolutely delicious! 
+
+Please note this please is cash only, be prepared before you sit down, otherwise there's an ATM across the street. 
+
+The food was so incredibly delicious and tasted authentic Vietnamese. I had the Bun Bo Hue (spicy broth) with pig feet and big blood. My partner had a bowl of Pho Dac Biet. And we both shared an appetizer of pork and shrimp summer rolls. 
+
+The service, food, and location is perfect. And super inexpensive for the quality. 
+
+A friend recommended this place since we were visiting, and I wish we lived in San Francisco because we would be regulars weekly if we did. 
+
+If you love Vietnamese food, do yourself a favor and visit this place.
+
+  REVIEW
+  author_id: 2,
+  business_id: 12,
+  useful: 1,
+  cool: 0,
+  funny: 1,
+)
+Review.create!(
+  body: <<~REVIEW,
+
+  Despite the negative reviews and the food safety alert posted recently, I have been here twice and enjoyed what I ordered. 
+Highlights are the Bun Rieu (i'd say the best I've had anywhere) and the catfish in caramel sauce in the clay pot. It's not the ambiance I come here for, but it's the delicious food and great prices that will keep me coming back. The service is nice enough.
+
+  REVIEW
+  author_id: 3,
+  business_id: 12,
   useful: 1,
   cool: 0,
   funny: 1,

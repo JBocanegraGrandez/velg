@@ -22,16 +22,16 @@ import MainBot from './main_bot';
 
             <div className="items">
               <div>
-                Home Cleaners
+                Github
               </div>
               <div>
-                Restaurants
+                LinkedIn
               </div>
               <div>
-                Home Services
+                Portfolio
               </div>
               <div>
-                Delivery
+                Resume
               </div>
 
             </div>

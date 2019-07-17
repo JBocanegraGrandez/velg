@@ -43,7 +43,7 @@ class SearchMain extends React.Component{
             </div>
             <div className="little-div-input">
               <input onChange={this.update('search')} id="little-left-search-input"
-                placeholder="home cleaners, burgers, spas..."
+                placeholder="burgers, mexican, breakfast..."
                 type="text" value={this.state.search}></input>
             </div>
           </div>
@@ -53,7 +53,7 @@ class SearchMain extends React.Component{
             </div>
             <div className="little-div-input">
               <input id="little-right-search-input"
-                placeholder="address, neighborhood, city, state or zip"
+                placeholder="San Francisco"
                 type="text" value={this.state.location} onChange={this.update('location')}></input>
             </div>
           </div>

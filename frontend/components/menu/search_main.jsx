@@ -43,9 +43,13 @@ class SearchMain extends React.Component{
               <label htmlFor="left-search-input">Find</label>
             </div>
             <div className="div-input">
-              <input onChange={this.update('search')} id="left-search-input"
-                placeholder="home cleaners, burgers, spas..."
-                type="text" value={this.state.search}></input>
+              <input
+                onChange={this.update("search")}
+                id="left-search-input"
+                placeholder="burgers, mexican, breakfast..."
+                type="text"
+                value={this.state.search}
+              />
             </div>
           </div>
           <div className="right-search-container">
@@ -53,13 +57,19 @@ class SearchMain extends React.Component{
               <label htmlFor="right-search-input">Near</label>
             </div>
             <div className="div-input">
-              <input id="right-search-input"
-                placeholder="address, neighborhood, city, state or zip"
-                type="text" value={this.state.location} onChange={this.update('location')}></input>
+              <input
+                id="right-search-input"
+                placeholder="San Francisco"
+                type="text"
+                value={this.state.location}
+                onChange={this.update("location")}
+              />
             </div>
           </div>
           <div className="right-search-logo">
-            <button type="submit" className="logo-glass"><i className="fas fa-search"></i></button>
+            <button type="submit" className="logo-glass">
+              <i className="fas fa-search" />
+            </button>
           </div>
         </div>
       </form>

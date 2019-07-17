@@ -1,21 +1,27 @@
 import React from 'react';
 import HeaderLog from './header_log_container.jsx';
+import {Link} from 'react-router-dom'
+
 const headerMain = () => (
   <div className="page-header-main">
     <div className="menu-container">
       <div className="menu-left">
         <div className="menu-text-1">
-          <button>Write a Review</button>
+          <button>
+            <Link to={"/create"} className="link-blank">
+              Write a Review
+            </Link>
+          </button>
         </div>
-        <div className="menu-text-2">
+        {/* <div className="menu-text-2">
           <button>Events</button>
         </div>
         <div className="menu-text-3">
           <button>Talk</button>
-        </div>
+        </div> */}
       </div>
       <div>
-        <HeaderLog/>
+        <HeaderLog />
       </div>
     </div>
   </div>

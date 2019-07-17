@@ -1,0 +1,119 @@
+.review-create-body-wrapper {
+    max-width: 960px;
+    margin: 0; 
+    padding: 0 15px;
+}
+
+.review-content-inner-left {
+    max-width: 625px;
+}
+
+.review-content-title {
+    padding-top: 24px;
+    padding-bottom: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 -24px;
+}
+
+.review-content-title-left {
+    flex: 1;
+    white-space: nowrap;
+    margin: 0 24px;
+    max-width: calc(100% - 48px);
+}
+.review-content-title-left-h2 {
+    font-size: 36px;
+    line-height: 1.16667em;
+}
+
+.review-title-link {
+    color: #0073bb;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+}
+
+.review-create-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: text;
+    padding: 18px;
+    max-width: 630px;
+}
+
+.review-create-rate-wrapper {
+    margin-bottom: 18px;
+}
+
+.review-create-rate-holder {
+    vertical-align: baseline;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.review-create-rate-fieldset {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.review-create-stars-ul {
+    float: left;
+    width: 162px;
+    height: 30px;
+    background: url('https://s3-media0.fl.yelpcdn.com/assets/public/selector_stars.yelp_design_web.yji-a5aa4dca29f380170c5aaa282a275bc6.png') no-repeat;
+    background-position: 0 -120px;
+    background-size: 162px 180px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.review-create-stars-message {
+    margin: 8px 0 0 9px;
+    float: left;
+}
+
+.review-create-textarea {
+    height: 100px;
+    font-size: 18px;
+    line-height: 1.44em;
+    border: 0;
+    outline: none;
+    padding: 0;
+    resize: none;
+    width: 100%;
+    min-height: 258px;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    font-weight: 400;
+}
+
+.review-create-submit-holder {
+    margin-top: 24px;
+}
+
+.review-create-submit-button {
+    color: white;
+    border-color: #8d0005;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    background-color: #d90007;
+    background: -webkit-linear-gradient(#d90007, #c91400);
+    background: linear-gradient(#d90007, #c91400);
+    cursor: pointer;
+    border: 1px black solid;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.28571em;
+    padding: 8px 19px 9px;
+    padding-left: 12px;
+    border-radius: 3px;
+    margin-right: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 240px;
+    height: 48px;
+}

@@ -15,6 +15,7 @@ import SearchIndexForm from './menu/search_index';
 import FooterMain from './menu/footer';
 import BusinessShowTop from './menu/business_show_top_container';
 import BusinessIndexContainer from './menu/business_index_container';
+import ReviewCreateForm from './reviews/review_create_form'
 import { AuthRoute } from "../util/route_util.jsx";
 
 
@@ -31,6 +32,7 @@ const App = () => (
       <Route exact path="/signup" component={SignUpFormContainer} />
       <Route exact path="/business/:id" component={BusinessShowTop} />
       <Route exact path='/' component={SearchIndexForm} />
+      <Route exact path='/create' component={ReviewCreateForm} />
       <Route path='/search' component={BusinessIndexContainer} />
     </Switch>
     <footer>
