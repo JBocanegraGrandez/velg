@@ -54,7 +54,9 @@ class SearchMain extends React.Component{
             <div className="little-div-input">
               <input id="little-right-search-input"
                 placeholder="San Francisco"
+                disabled
                 type="text" value={this.state.location} onChange={this.update('location')}></input>
+                
             </div>
           </div>
           <div className="little-right-search-logo">

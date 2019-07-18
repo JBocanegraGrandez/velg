@@ -61,6 +61,7 @@ class SearchMain extends React.Component{
                 id="right-search-input"
                 placeholder="San Francisco"
                 type="text"
+                disabled
                 value={this.state.location}
                 onChange={this.update("location")}
               />

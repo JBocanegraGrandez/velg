@@ -22,6 +22,12 @@ class SignUpForm extends React.Component {
     });
   }
 
+  demo(e) {
+    e.preventDefault();
+    const user = { email:'demo@demo.com', password:'demodemo'};
+    this.props.login(user)
+  }
+
   handleSubmit(e) {
     e.preventDefault();
     const user = Object.assign({}, this.state);
@@ -63,12 +69,14 @@ class SignUpForm extends React.Component {
                   Service</Link> and <Link className="link" to="dad">Privacy Policy.</Link></p>
                 </div>
                 <div>
-                  <button className="fb-button"
-                    type="submit"><span><i className="fab fa-facebook-f"></i>  </span>  Sign Up with Facebook</button>
-                  <button className="google-button"
-                    type="submit"> <i className="fab fa-google"></i>  Sign Up with Google</button>
+                    <button className="fb-button" style={{ marginBottom: '7px' }} onClick={this.demo.bind(this)}
+                    ><span>  </span>  Tour as a Guest</button>
+                  {/* <button className="fb-button"
+                    type="submit"><span><i className="fab fa-facebook-f"></i>  </span>  Sign Up with Facebook</button> */}
+                  {/* <button className="google-button"
+                    type="submit"> <i className="fab fa-google"></i>  Sign Up with Google</button> */}
                 </div>
-                <p className="fine-print">Don't worry, we never post without your permission</p>
+                <p className="fine-print">As a guest you can start using Velg right away</p>
               </div>
               <fieldset className="middle-form">
                 <legend className="or" align="center">OR</legend>

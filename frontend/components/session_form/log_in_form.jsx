@@ -73,10 +73,15 @@ class LogInForm extends React.Component {
               </div>
               <div>
                 <button className="fb-button"
-                  type="submit"><span><i className="fab fa-facebook-f"></i>  </span>  Sign Up with Facebook</button>
-                <button className="google-button"
-                  type="submit"> <i className="fab fa-google"></i>  Sign Up with Google</button>
+                  onClick={this.demo.bind(this)}
+                  style={{ marginBottom: '7px' }}
+                  type="submit"><span>  </span>  Tour as a Guest</button>
+                {/* <button className="fb-button"
+                  type="submit"><span><i className="fab fa-facebook-f"></i>  </span>  Sign Up with Facebook</button> */}
+                {/* <button className="google-button"
+                  type="submit"> <i className="fab fa-google"></i>  Sign Up with Google</button> */}
               </div>
+                  <p className="fine-print">As a guest you can start using Velg right away</p>
               <fieldset className="middle-form-login">
                 <legend className="or" align="center">OR</legend>
               </fieldset>

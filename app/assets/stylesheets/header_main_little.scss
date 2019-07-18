@@ -369,3 +369,16 @@
   color: #fff;
   cursor: pointer;
 }
+
+.nav-profile-pic-holder {
+  overflow: hidden;
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  background-image: image-url('users/chuck_norris.png');
+  background-size: contain;
+  margin-left: 26px;
+
+}
