@@ -115,3 +115,148 @@
     font-weight: bold;
     list-style: none;
 }
+
+.Profile-show-bot-container {
+    padding-top: 15px;
+    padding-bottom: 36px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.Profile-show-bot-box-wrapper {
+    margin-top: 9px;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.column-alpha {
+    float: left;
+    padding: 0 15px;
+    min-height: 1px;
+    box-sizing: border-box;
+    width: 25%;
+    margin-top: 27px;
+}
+
+.column-beta {
+    float: left;
+    padding: 0 15px;
+    min-height: 1px;
+    box-sizing: border-box;
+    width: 75%;
+}
+
+.Profile-column-title {
+    padding: 12px 12px 12px 0;
+}
+
+.Profile-column-title h3 {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    line-height: 1.3125em;
+}
+
+.user-details-reviews {
+
+}
+
+.user-details-reviews-title-wrapper {
+    margin-bottom: 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.user-details-reviews-title-holder {
+    width: 100%;
+}
+
+.user-details-reviews-title-h2 {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1.28571em;
+    color: #d32323;
+}
+
+.reviews-ul li{
+    margin: 0;
+    padding: 18px 0;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 17px;
+}
+
+.review-div-details {
+    margin-bottom: 12px;
+    display: flex;
+    position: relative;
+}
+
+.review-div-avatar {
+    border-right: 12px solid transparent;
+    border-left: none;
+}
+
+
+
+.review-div-stats {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+}
+
+.review-business-pic {
+    border-radius: 4px;
+    vertical-align: middle;
+    height: 60px;
+    width: 60px;
+    background: image-url('thehouse1.jpeg') no-repeat;
+    background-size: cover;
+
+}
+
+.review-business-title a{
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+
+.review-business-category {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.review-business-category span {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.review-business-address {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-business-address span {
+    font-size: 12px;
+    line-height: 1.5em;
+}
+
+.review-div-bot-content {
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+
+.review-div-bot-content-header {
+    margin-top: 3px;
+    margin-bottom: 6px;
+    display: flex;
+    line-height: 19px;
+}

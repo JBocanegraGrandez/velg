@@ -16,8 +16,9 @@ import FooterMain from './menu/footer';
 import BusinessShowTop from './menu/business_show_top_container';
 import BusinessIndexContainer from './menu/business_index_container';
 import ReviewCreateForm from './reviews/review_create_form'
-import ProfileShow from './profile/profile_show'
+import ProfileShow from './profile/profile_show';
 import { AuthRoute } from "../util/route_util.jsx";
+import ProfileEdit from './profile/profile_edit';
 
 
 const App = () => (
@@ -25,8 +26,6 @@ const App = () => (
     <header>
       <AuthRoute exact path="/login" component={HeaderAuthContainer} />
       <AuthRoute exact path="/signup" component={HeaderAuthContainer} />
-      <Link to="/" className="header-link">
-      </Link>
     </header>
     <Switch>
       <Route exact path="/login" component={LogInFormContainer} />
@@ -35,6 +34,7 @@ const App = () => (
       <Route exact path='/' component={SearchIndexForm} />
       <Route exact path='/create' component={ReviewCreateForm} />
       <Route exact path='/profile' component={ProfileShow} />
+      <Route exact path='/profile/edit' component={ProfileEdit} />
       <Route path='/search' component={BusinessIndexContainer} />
     </Switch>
     <footer>
