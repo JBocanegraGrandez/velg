@@ -39,6 +39,9 @@ class ProfileShow extends React.Component {
                                 </div>
                             </div>
                         </div>
+                        <div className="Profile-show-bot-container">
+                            
+                        </div>
                     </div>
                     <div></div>
                 </div>
