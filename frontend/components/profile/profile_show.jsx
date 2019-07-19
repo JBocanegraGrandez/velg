@@ -7,6 +7,16 @@ class ProfileShow extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        this.props.fetchUser(this.props.userId)
+    }
+
+    componentWillReceiveProps(nextprops) {
+        if (this.props.userId !== nextprops.userId) {
+            this.props.fetchUser(nextprops.userId);
+        }
+    }
+
     search(arg) {
         this.props.searchbiz(arg).then((res) => this.props.history.push(`/search`));
     }
@@ -71,7 +81,9 @@ class ProfileShow extends React.Component {
     }
 
     render () {
-        console.log(this.props)
+        if (this.props.currentUser === undefined || this.props.targetUser === undefined) {
+            return null;
+        }
         return (
             <div>
                 <HeaderSearch/>
@@ -86,8 +98,8 @@ class ProfileShow extends React.Component {
                                 <div className="user-details-wrapper">
                                     <div className="user-profile-avatar-dummy"></div>
                                     <div className="user-profile-info">
-                                        <h1>{this.props.currentUser.firstName}</h1>
-                                        <h3 className="user-location-zipcity">{this.props.currentUser.zipcode}</h3>
+                                        <h1>{this.props.targetUser.firstName}</h1>
+                                        <h3 className="user-location-zipcity">{this.props.targetUser.zipcode}</h3>
                                         <ul className="user-profile-stats">
                                             <li className="friend-count"><span></span><strong>#</strong>  Friends</li>
                                             <li className="review-count"><span></span><strong>#</strong>  Reviews</li>

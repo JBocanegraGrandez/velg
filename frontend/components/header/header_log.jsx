@@ -15,7 +15,7 @@ const HeaderLog = ({currentUser, logout}) => {
   const logged = () => (
   <div className="menu-right">
     <div className="comment-header-div">
-      <Link to={'/profile'}><span className="nav-profile-pic-holder"></span></Link>
+      <Link to={`/user/${currentUser.id}`}><span className="nav-profile-pic-holder"></span></Link>
     </div>
     <div className="sign-up-header-div">
       <Link to="/signup" className="link-blank"><button onClick={logout} >Log out</button></Link>

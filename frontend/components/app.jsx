@@ -33,7 +33,7 @@ const App = () => (
       <Route exact path="/business/:id" component={BusinessShowTop} />
       <Route exact path='/' component={SearchIndexForm} />
       <Route exact path='/business/:id/create' component={ReviewCreateForm} />
-      <Route exact path='/profile' component={ProfileShow} />
+      <Route exact path='/user/:id' component={ProfileShow} />
       <Route exact path='/profile/edit' component={ProfileEdit} />
       <Route path='/search' component={BusinessIndexContainer} />
     </Switch>
