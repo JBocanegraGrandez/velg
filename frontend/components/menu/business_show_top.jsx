@@ -54,7 +54,7 @@ class BusinessShowTop extends React.Component {
                 <div className='right-biz-header'>
                   <div className='review-button-container'>
                     <button className='write-review'>
-                      <i className="far fa-star"></i> Write a Review
+                      <i className="far fa-star"></i> <Link className='link-blank' to={`/business/${this.props.businessId}/create`}>Write a Review</Link>
                     </button>
                   </div>
                   <div className='social-button-container'>

@@ -71,6 +71,7 @@ class ProfileShow extends React.Component {
     }
 
     render () {
+        console.log(this.props)
         return (
             <div>
                 <HeaderSearch/>
@@ -85,8 +86,8 @@ class ProfileShow extends React.Component {
                                 <div className="user-details-wrapper">
                                     <div className="user-profile-avatar-dummy"></div>
                                     <div className="user-profile-info">
-                                        <h1>FirstName L.</h1>
-                                        <h3 className="user-location-zipcity">ZipcodeCity</h3>
+                                        <h1>{this.props.currentUser.firstName}</h1>
+                                        <h3 className="user-location-zipcity">{this.props.currentUser.zipcode}</h3>
                                         <ul className="user-profile-stats">
                                             <li className="friend-count"><span></span><strong>#</strong>  Friends</li>
                                             <li className="review-count"><span></span><strong>#</strong>  Reviews</li>
@@ -102,6 +103,7 @@ class ProfileShow extends React.Component {
                                 </div>
                             </div>
                         </div>
+                    </div>
                         <div className="Profile-show-bot-container">
                             <div className="Profile-show-bot-box-wrapper">
                                 <div className="column column-alpha">
@@ -124,7 +126,6 @@ class ProfileShow extends React.Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
                     <div></div>
                 </div>
             </div>

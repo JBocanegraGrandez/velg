@@ -7,8 +7,24 @@ class ReviewCreateForm extends React.Component {
         super(props);
     }
 
+    componentDidMount() {
+        this.props.fetchBusiness(this.props.businessId);
+    }
+
+    componentWillReceiveProps(nextprops) {
+        if (this.props.businessId !== nextprops.businessId) {
+            this.props.fetchBusiness(nextprops.businessId);
+        }
+    }
+
 
     render () {
+        let business
+        if (!this.props.business) {
+            return ""
+        } else {
+            business = this.props.business
+        }
         return (
             <div>
                 <ReviewCreateHeader/>
@@ -18,7 +34,7 @@ class ReviewCreateForm extends React.Component {
                             <div className="review-content-title">
                                 <div className="review-content-title-left">
                                     <h2 className="review-content-title-left-h2">
-                                        <Link className="review-title-link" to={'/business/1'}>Business Title</Link>
+                                        <Link className="review-title-link" to={'/business/1'}>{business.restaurant_name}</Link>
                                     </h2>
                                 </div>
                             </div>
@@ -29,7 +45,11 @@ class ReviewCreateForm extends React.Component {
                                             <div className="review-create-rate-wrapper">
                                                 <div className="review-create-rate-holder">
                                                     <fieldset className="review-create-rate-fieldset">
-                                                        <ul className="review-create-stars-ul"></ul>
+                                                        <ul className="review-create-stars-ul">
+                                                            <li className="review-create-stars-li">
+                                                                <input className="review-create-stars-li-input"></input>
+                                                            </li>
+                                                        </ul>
                                                         <span className='review-create-stars-message'>
                                                             <p>Rate message</p>
                                                         </span>

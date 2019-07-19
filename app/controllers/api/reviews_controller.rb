@@ -1,10 +1,13 @@
 class Api::ReviewsController < ApplicationController
 
-  # def index
-  #   @business = Business.all
-  #
-  #   render :index
-  # end
+  def index
+    if params.has_key?(:user_id)
+      @reviews = Review.where(author_id: params[:user_id])
+    else 
+      @reviews = Review.all
+    end
+    render 'api/reviews/index'
+  end
 
   def show
     @review = Review.find(params[:id])

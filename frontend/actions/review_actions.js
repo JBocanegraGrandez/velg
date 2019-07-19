@@ -2,9 +2,15 @@ import * as APIUtil from '../util/review_api_util';
 
 export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS';
 export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
+export const RECEIVE_REVIEWS_USER = 'RECEIVE_REVIEW_USER';
 
 export const receiveReviews = reviews => ({
   type: RECEIVE_REVIEWS,
+  reviews,
+});
+
+export const receiveReviewsUser = reviews => ({
+  type: RECEIVE_REVIEWS_USER,
   reviews,
 });
 
@@ -28,6 +34,12 @@ export const createReview = review => dispatch => (
 );
 
 export const fetchReviews = () => dispatch => (
+  APIUtil.getBusinesses().then(reviews => (
+    dispatch(receiveReviews(reviews))
+  ))
+);
+
+export const fetchReviewsUser = () => dispatch => (
   APIUtil.getBusinesses().then(reviews => (
     dispatch(receiveReviews(reviews))
   ))

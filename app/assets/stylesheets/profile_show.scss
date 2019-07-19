@@ -23,6 +23,7 @@
 .Profile-show-user-container {
     padding: 9px 0 24px;
     position: relative;
+    display: flex;
 }
 
 .user-avatar {
@@ -30,7 +31,7 @@
     width: 217px;
     height: 217px;
     bottom: -46px;
-    // position: absolute;
+    position: absolute;
 }
 
 .user-avatar-wrapper {
@@ -52,7 +53,10 @@
     min-width: 100%;
     display: flex;
     flex-direction: row;
-    }
+}
+.user-details-wrapper div:not(:first-child) {
+    margin-top: 50px;
+}
 
 .user-profile-avatar-dummy {
     width: 217px;
@@ -65,7 +69,8 @@
 }
 
 .user-profile-info {
-    margin-left: 15px;
+    // margin-left: 15px;
+    margin-left: 30px;
     margin-right: 15px;
     border-collapse: collapse;
     border-spacing: 0 0;
