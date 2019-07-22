@@ -52,6 +52,7 @@ group :development do
   gem 'pry-rails'
   gem 'annotate'
   # gem 'bcrypt'
+  gem 'aws-sdk-s3'
 
 end
 

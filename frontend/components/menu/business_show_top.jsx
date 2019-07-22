@@ -13,7 +13,7 @@ class BusinessShowTop extends React.Component {
 
   componentWillReceiveProps(nextprops) {
     if (this.props.businessId !== nextprops.businessId) {
-      this.props.fetchUser(nextprops.businessId);
+      this.props.fetchBusiness(nextprops.businessId);
     }
   }
 

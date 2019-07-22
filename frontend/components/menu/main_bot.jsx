@@ -14,8 +14,10 @@ import { login } from '../../actions/session_actions';
         <div className="main-bot-3-wrapper">
           <div className="tri-holder">
           <div className="card-business">
+            <Link className="link" to="/business/1">
             <div className="card-business-photo">
             </div>
+            </Link>
             <div className="card-business-body">
               <div className="card-business-content">
                 <Link className="link" to="/business/1"><h3 className="card-content-title">The House</h3></Link>
@@ -25,7 +27,7 @@ import { login } from '../../actions/session_actions';
               </div>
             </div>
           </div>
-        </div>
+          </div>
         <div className="tri-holder">
           <div className="card-business">
             <div className="card-business-photo2">

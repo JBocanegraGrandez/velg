@@ -28,8 +28,8 @@ class ProfileEdit extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         let user = {
-            firstName: this.state.firstName,
-            lastName: this.state.lastName,
+            first_name: this.state.firstName,
+            last_name: this.state.lastName,
             zipcode: this.state.zipcode,
         }
         this.props.updateUser(this.props.currentUser.id, user)

@@ -6,14 +6,7 @@ import {getBusinesses, getBusiness, createReview} from './util/business_api_util
 import { fetchBusiness } from './actions/business_actions';
 import { getReviewsUser } from "./util/review_api_util";
 import Root from './components/root';
-window.login = login;
-window.signup = signup;
-window.logout = logout;
-window.getBusinesses = getBusinesses;
-window.getBusiness = getBusiness;
-window.createReview = createReview;
-window.fetchBusiness = fetchBusiness;
-window.getReviewsUser = getReviewsUser
+
 
 
 document.addEventListener('DOMContentLoaded',()=> {
