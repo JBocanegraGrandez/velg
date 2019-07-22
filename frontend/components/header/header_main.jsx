@@ -2,15 +2,15 @@ import React from 'react';
 import HeaderLog from './header_log_container.jsx';
 import {Link} from 'react-router-dom'
 
-const headerMain = () => (
+const headerMain = (props) => (
   <div className="page-header-main">
     <div className="menu-container">
       <div className="menu-left">
         <div className="menu-text-1">
-          <button>
-            <Link to={"/create"} className="link-blank">
+          <button onClick={props.searchbiz('')}>
+            <div className="link-blank">
               Write a Review
-            </Link>
+            </div>
           </button>
         </div>
         {/* <div className="menu-text-2">

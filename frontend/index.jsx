@@ -4,6 +4,7 @@ import configureStore from './store/store';
 import {login, signup, logout} from './util/session_api_util';
 import {getBusinesses, getBusiness, createReview} from './util/business_api_util';
 import { fetchBusiness } from './actions/business_actions';
+import { getReviewsUser } from "./util/review_api_util";
 import Root from './components/root';
 window.login = login;
 window.signup = signup;
@@ -12,6 +13,7 @@ window.getBusinesses = getBusinesses;
 window.getBusiness = getBusiness;
 window.createReview = createReview;
 window.fetchBusiness = fetchBusiness;
+window.getReviewsUser = getReviewsUser
 
 
 document.addEventListener('DOMContentLoaded',()=> {
@@ -28,6 +30,7 @@ document.addEventListener('DOMContentLoaded',()=> {
  } else {
    store = configureStore();
  }
+  window.getReviewsUser = getReviewsUser
 
   window.getState = store.getState;
   window.dispatch = store.dispatch;

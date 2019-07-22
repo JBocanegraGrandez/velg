@@ -5,6 +5,14 @@ import ReviewCreateHeader from './review_create_header'
 class ReviewCreateForm extends React.Component {
     constructor(props){
         super(props);
+        this.state = {
+            body: "",
+            rating: '0',
+            authorId: this.props.currentUser.id,
+            businessId: this.props.businessId
+        }
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
     componentDidMount() {
@@ -17,6 +25,55 @@ class ReviewCreateForm extends React.Component {
         }
     }
 
+    update(field) {
+        return e => this.setState({
+            [field]: e.currentTarget.value
+        });
+    }
+
+    handleChange(event) {
+        this.setState({ rating: event.target.value });
+    }
+
+    handleSubmit(e) {
+        e.preventDefault()
+        let review = {
+            body: this.state.body,
+            rating: parseInt(this.state.rating),
+            author_id: this.state.authorId,
+            business_id: this.state.businessId,
+            useful: 0,
+            funny: 0,
+            cool: 0
+        }
+        this.props.createReview(this.state.businessId, review)
+    }
+
+    showRatingMessage() {
+        let message
+        switch (this.state.rating) {
+            case "1":
+                message = "Eek! Methinks not.";
+                break;
+            case "2":
+                message = "Meh. I've experienced better.";
+                break;
+            case "3":
+                message = "A - OK."
+                break;
+            case "4":
+                message = "Yay! I'm a fan.";
+                break;
+            case "5":
+                message = "Woohoo! As good as it gets!";
+                break;
+            default:
+                message = "Select your rating"
+                break;
+        }
+        return message
+    }
+
 
     render () {
         let business
@@ -24,6 +81,7 @@ class ReviewCreateForm extends React.Component {
             return ""
         } else {
             business = this.props.business
+
         }
         return (
             <div>
@@ -39,7 +97,7 @@ class ReviewCreateForm extends React.Component {
                                 </div>
                             </div>
                             <div>
-                                <form>
+                                <form onSubmit={this.handleSubmit}>
                                     <div>
                                         <div className="review-create-box">
                                             <div className="review-create-rate-wrapper">
@@ -51,12 +109,22 @@ class ReviewCreateForm extends React.Component {
                                                             </li>
                                                         </ul>
                                                         <span className='review-create-stars-message'>
-                                                            <p>Rate message</p>
+                                                            <p>{this.showRatingMessage()}</p>
                                                         </span>
                                                     </fieldset>
                                                 </div>
                                             </div>
+                                            <select value={this.state.rating} onChange={this.handleChange}>
+                                                <option  disabled value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
                                             <textarea className="review-create-textarea"
+                                                value={this.state.body}
+                                                onChange={this.update('body')}
                                                 placeholder="Your review helps others learn about great local businesses. 
                                                     Please don't review this business if you received a freebie for writing this review, 
                                                     or if you're connected in any way to the owner or employees.">
@@ -65,7 +133,7 @@ class ReviewCreateForm extends React.Component {
                                     </div>
                                     <div className="review-create-submit-wrapper">
                                         <div className="review-create-submit-holder">
-                                            <button className="review-create-submit-button">Post Review</button>
+                                            <button type="submit" className="review-create-submit-button">Post Review</button>
                                         </div>
                                     </div>
                                 </form>

@@ -9,11 +9,13 @@ class ProfileShow extends React.Component {
 
     componentDidMount() {
         this.props.fetchUser(this.props.userId)
+        this.props.fetchReviewsUser(this.props.userId)
     }
 
     componentWillReceiveProps(nextprops) {
         if (this.props.userId !== nextprops.userId) {
             this.props.fetchUser(nextprops.userId);
+            this.props.fetchReviewsUser(nextprops.userId)
         }
     }
 
@@ -21,31 +23,37 @@ class ProfileShow extends React.Component {
         this.props.searchbiz(arg).then((res) => this.props.history.push(`/search`));
     }
 
-    showReviews () {
+    showReviews(reviews) {
+        if (this.props.reviews[0] === undefined) {
+            return null
+        }
         let business = {"cat1": "cat1", "cat2": "cat2", "street": "street", "city": "city", "state": "state"}
         return (
           <ul className="reviews-ul">
+            {reviews.map((review)=>{
+                return(
+
             <li>
               <div className="review-div">
                 <div className="review-div-top">
                   <div className="review-div-details">
                     <div className="review-div-avatar">
                       <div className="review-div-avatar-photo">
-                        <Link to={"business/1"}>
+                        <Link to={"/business/1"}>
                           <img className="review-business-pic" />
                         </Link>
                       </div>
                     </div>
                     <div className="review-div-stats">
                       <div className="review-business-title">
-                        <Link className="link" to={'business/1`'}><span>Business Title</span></Link>
+                        <Link className="link" to={`/business/${review.business.id}`}><span>{review.business.restaurant_name}</span></Link>
                       </div>
                       <div className="review-business-category">
-                        <span onClick={() => this.search(business.cat1)} className="link">{business.cat1}</span>, <span onClick={() => this.search(business.cat2)} className="link"> {business.cat2}</span>
+                        <span onClick={() => this.search(review.business.cat1)} className="link">{review.business.cat1}</span>, <span onClick={() => this.search(review.business.cat2)} className="link"> {review.business.cat2}</span>
                       </div>
                       <div className="review-business-address">
-                        <span>{business.street}</span>
-                        <span>{business.city}, {business.state}</span>
+                        <span>{review.business.street}</span>
+                        <span>{review.business.city}, {review.business.state}</span>
                       </div>
                     </div>
                   </div>
@@ -56,26 +64,14 @@ class ProfileShow extends React.Component {
                             <div className="business-review-stars"></div>
                             <span className="business-review-date">Date</span>
                         </div>
-                                <p>Finally made it to The House, and it lived up to all of their amazing \
-            reviews. Highly recommended for a date night, or a good spot to take the \
-            parents. It's small and cozy, so not great for a big group.
-        
-            What we ordered:
-            -Salmon rolls
-            -Sea Bass
-            -Wasabi noodles
-        
-            All 5 stars. Would come back to eat the salmon \
-            rolls and sea bass again and again.
-        
-            The service is quick, the food was delicious, the wine was good.
-        
-    Cannot wait to come back, might be my new favorite SF spot!</p>
+                                <p>{review.body}</p>
                     </div>
                     <div className="review-div-bot-tools"></div>
                 </div>
               </div>
             </li>
+                )
+            })}
           </ul>
         );
     }
@@ -109,7 +105,7 @@ class ProfileShow extends React.Component {
                                     <div className="user-profile-actions">
                                         <ul className="user-profile-action-link-list">
                                             <li><Link className="link-blank" to={'profile/changepic'}>Change Profile Picture</Link></li>
-                                            <li><Link className="link-blank" to={'profile/edit'}>Update Your Profile</Link></li>
+                                            <li><Link className="link-blank" to={`${this.props.currentUser.id}/edit`}>Update Your Profile</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -133,7 +129,7 @@ class ProfileShow extends React.Component {
                                                 <h2 className="user-details-reviews-title-h2">Reviews</h2>
                                             </div>
                                         </div>
-                                        {this.showReviews()}
+                                        {this.showReviews(this.props.reviews)}
                                     </div>
                                 </div>
                             </div>

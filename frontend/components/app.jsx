@@ -18,7 +18,8 @@ import BusinessIndexContainer from './menu/business_index_container';
 import ReviewCreateForm from './reviews/review_create_form_container'
 import ProfileShow from './profile/profile_show_container';
 import { AuthRoute } from "../util/route_util.jsx";
-import ProfileEdit from './profile/profile_edit';
+import ProfileEdit from './profile/profile_edit_container';
+
 
 
 const App = () => (
@@ -34,7 +35,7 @@ const App = () => (
       <Route exact path='/' component={SearchIndexForm} />
       <Route exact path='/business/:id/create' component={ReviewCreateForm} />
       <Route exact path='/user/:id' component={ProfileShow} />
-      <Route exact path='/profile/edit' component={ProfileEdit} />
+      <Route exact path='/user/:id/edit' component={ProfileEdit} />
       <Route path='/search' component={BusinessIndexContainer} />
     </Switch>
     <footer>

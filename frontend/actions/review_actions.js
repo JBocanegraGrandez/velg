@@ -27,32 +27,21 @@ export const receiveReview = ({ body, businessId, authorId,
     funny
 });
 
-export const createReview = review => dispatch => (
-  APIUtil.createReview(review).then(review => (
+export const createReview = (businessId, review) => dispatch => (
+  APIUtil.postReview(businessId, review).then(review => (
     dispatch(receiveReview(review))
   ))
 );
 
-export const fetchReviews = () => dispatch => (
-  APIUtil.getBusinesses().then(reviews => (
-    dispatch(receiveReviews(reviews))
-  ))
-);
 
-export const fetchReviewsUser = () => dispatch => (
-  APIUtil.getBusinesses().then(reviews => (
-    dispatch(receiveReviews(reviews))
-  ))
-);
 
-export const fetchTheMatchesBusinesses = (arg) => dispatch => (
-  APIUtil.getBusinesses().then(businesses => (
-    dispatch(receiveBusinesses(businesses))
-  ))
-);
-
-export const fetchBusiness = id => dispatch => {
-  return APIUtil.getBusiness(id).then(business => {
-    return dispatch(receiveBusiness(business));
-  });
+export const fetchReviewsUser = (userId) => dispatch => {
+  // debugger
+  return (
+    APIUtil.getReviewsUser(userId).then(reviews => {
+      // debugger
+      dispatch(receiveReviewsUser(reviews))
+    })
+  )
 };
+

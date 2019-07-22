@@ -5,12 +5,13 @@ import { login } from '../../actions/session_actions';
 import HeaderMain from '../header/header_main';
 import SearchMain from '../menu/search_container';
 import MainBot from './main_bot';
+import { fetchFilteredBusinesses } from '../../actions/business_actions';
 
 
   const SearchIndexForm = () => (
     <div className="master">
       <div className="img-container">
-        <HeaderMain />
+        <HeaderMain searchbiz={fetchFilteredBusinesses}/>
         <div>
           <div className="main-holder">
             <div className="logo">

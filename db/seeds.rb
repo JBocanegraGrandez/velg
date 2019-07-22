@@ -119,8 +119,8 @@ Business.create!(
   brunch: false,
   gender_neutral_restrooms: false,
   takeout: true,
-  lat: 34.081043,
-  lng: -118.386897,
+  lat: 37.761589,
+  lng: -122.419006,
   cat1: "Mexican",
   cat2: "Breakfast",
   img: "main4"
@@ -325,6 +325,7 @@ Review.create!(
   useful: 2,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -348,6 +349,7 @@ and buttery. Perfectly cooked and melts in your mouth!
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 Review.create!(
   body: <<~REVIEW,
@@ -364,6 +366,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 3
 )
 Review.create!(
   body: <<~REVIEW,
@@ -376,6 +379,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -388,6 +392,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 Review.create!(
   body: <<~REVIEW,
@@ -401,6 +406,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -414,6 +420,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -425,6 +432,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 
 Review.create!(
@@ -437,6 +445,7 @@ Really good Italian restaurant in the Castro. Came here after happy hour with fr
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -447,6 +456,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -457,6 +467,7 @@ Food is awesome as always... however... the kitchen was a disaster at getting th
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -467,6 +478,7 @@ This restaurant was particularly good tonight. The salmon was seasoned and tende
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -479,6 +491,7 @@ Overall service was wonderful and attentive to our needs. Quaint atmosphere enjo
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -490,6 +503,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -502,6 +516,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -515,6 +530,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -526,6 +542,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -537,6 +554,7 @@ I know I want to come back here and try the other items on the menu because of t
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -548,6 +566,7 @@ I've had the neatloaf and TBM sandwich on ciabatta in the past. I also love thei
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -561,6 +580,7 @@ Oh yeah, and they put an insane amount of red onion on each burger so you end up
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -572,6 +592,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -586,6 +607,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -602,6 +624,7 @@ Total M.E.H rating for this place.
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 4
 )
 Review.create!(
   body: <<~REVIEW,
@@ -614,6 +637,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5,
 )
 Review.create!(
   body: <<~REVIEW,
@@ -628,6 +652,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 Review.create!(
   body: <<~REVIEW,
@@ -642,6 +667,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 Review.create!(
   body: <<~REVIEW,
@@ -658,6 +684,7 @@ Review.create!(
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 Review.create!(
   body: <<~REVIEW,
@@ -680,6 +707,7 @@ If you love Vietnamese food, do yourself a favor and visit this place.
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )
 Review.create!(
   body: <<~REVIEW,
@@ -693,4 +721,5 @@ Highlights are the Bun Rieu (i'd say the best I've had anywhere) and the catfish
   useful: 1,
   cool: 0,
   funny: 1,
+  rating: 5
 )

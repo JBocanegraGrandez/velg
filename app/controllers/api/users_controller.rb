@@ -43,21 +43,18 @@ class Api::UsersController < ApplicationController
         render json: @user.errors.full_messages, status: 422
       end
   end
-end
+    def update
+      @user = User.find(params[:id])
+      if @user.update(user_params)
+        render 'api/users/show'
+      else
+        render json: @user.errors.full_messages, status: 422
+      end
+    
+  end
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
-  # def update
-  #   respond_to do |format|
-  #     if @user.update(user_params)
-  #       format.html { redirect_to @user, notice: 'User was successfully updated.' }
-  #       format.json { render :show, status: :ok, location: @user }
-  #     else
-  #       format.html { render :edit }
-  #       format.json { render json: @user.errors, status: :unprocessable_entity }
-  #     end
-  #   end
-  # end
 
   # DELETE /users/1
   # DELETE /users/1.json
@@ -79,3 +76,5 @@ end
     def user_params
       params.require(:user).permit(:first_name, :last_name, :email, :password, :zipcode)
     end
+
+end
