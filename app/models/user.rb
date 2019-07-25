@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_one_attached :photo
   validates :first_name, presence: true
   validates :last_name, presence: true
   validates :zipcode, presence: true
@@ -15,7 +16,6 @@ class User < ApplicationRecord
   foreign_key: :author_id,
   class_name: :Review
 
-  has_one_attached :photo
 
   def self.find_by_credentials(email, password)
     user = User.find_by(email: email)

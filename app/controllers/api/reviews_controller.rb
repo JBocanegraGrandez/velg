@@ -4,7 +4,7 @@ class Api::ReviewsController < ApplicationController
 
     # debugger
     if params.has_key?(:user_id)
-      @reviews = Review.where(author_id: params[:user_id]).includes(:business)
+      @reviews = Review.where(author_id: params[:user_id])
       
     else 
       @reviews = Review.all

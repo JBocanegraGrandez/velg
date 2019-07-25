@@ -3,7 +3,7 @@ import { connect } from  'react-redux';
 import { signup, login } from  '../../actions/session_actions.js';
 
 const mapStateToPros = ({errors}) => ({
-  errors: errors.errors
+  errors: errors.session
 });
 
 const mapDispatchToProp = dispatch => ({
