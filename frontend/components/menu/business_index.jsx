@@ -66,7 +66,7 @@ class BusinessIndex extends React.Component {
         <HeaderSearch/>
         <div className="business-index-top-shelf">
           <div className="top-shelf-content-container">
-            <h1>Best something&nbsp;<span>in Velg</span></h1>
+            <h1>Best Results&nbsp;<span>in Velg</span></h1>
           </div>
         </div>
         <div className="business-index-main">

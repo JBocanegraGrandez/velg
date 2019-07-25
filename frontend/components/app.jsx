@@ -19,6 +19,7 @@ import ReviewCreateForm from './reviews/review_create_form_container'
 import ProfileShow from './profile/profile_show_container';
 import { AuthRoute, ProtectedRoute } from "../util/route_util.jsx";
 import ProfileEdit from './profile/profile_edit_container';
+import ProfilePassword from './profile/profile_password_container';
 
 
 
@@ -36,6 +37,7 @@ const App = () => (
       <ProtectedRoute exact path='/business/:id/create' component={ReviewCreateForm} />
       <Route exact path='/user/:id' component={ProfileShow} />
       <Route exact path='/user/:id/edit' component={ProfileEdit} />
+      <Route exact path='/user/:id/password' component={ProfilePassword} />
       <Route path='/search' component={BusinessIndexContainer} />
     </Switch>
     <footer>

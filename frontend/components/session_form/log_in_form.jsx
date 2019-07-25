@@ -74,8 +74,9 @@ class LogInForm extends React.Component {
               <div>
                 <button className="fb-button"
                   onClick={this.demo.bind(this)}
+                  type="button"
                   style={{ marginBottom: '7px' }}
-                  type="submit"><span>  </span>  Tour as a Guest</button>
+                  ><span>  </span>  Tour as a Guest</button>
                 {/* <button className="fb-button"
                   type="submit"><span><i className="fab fa-facebook-f"></i>  </span>  Sign Up with Facebook</button> */}
                 {/* <button className="google-button"

@@ -71,36 +71,38 @@ class BusinessShowTop extends React.Component {
                     <div className="map-bot">
                       <ul>
                         <li className='relative'>
-                          <span>(I)</span>
+                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
                           <div className="address-main">
                           {this.props.business.street},<br></br>
-                        {this.props.business.city}, {this.props.business.state} {this.props.business.zipcode}
+                          {this.props.business.city}, {this.props.business.state} {this.props.business.zipcode},<br/>
+                          {this.props.business.neighborhood}
+
                           </div>
                         </li>
-                        <li className='relative'>
-                          <span>(I)</span>
+                        {/* <li className='relative'>
+                          <span></span>
                           <div className="address">
                           {this.props.business.neighborhood}
                           </div>
-                        </li>
-                        <li className='relative'>
-                          <span>(I)</span>
+                        </li> */}
+                        {/* <li className='relative'>
+                          <span></span>
                           <div className="address">
                           <a>Get directions</a>
                           </div>
                         </li>
                         <li className='relative'>
-                          <span>(I)</span>
+                          <span></span>
                           <div className="address">
                           <a>(415)440-5446</a>
                           </div>
                         </li>
                         <li className='relative'>
-                          <span>(I)</span>
+                          <span></span>
                           <div className="address">
                           <a>Send to your Phone</a>
                           </div>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </div>

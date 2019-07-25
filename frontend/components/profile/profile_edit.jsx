@@ -52,7 +52,9 @@ class ProfileEdit extends React.Component {
           <div className="Profile-edit-main-holder">
             <div className="column column-alpha">
               <div className="Profile-column-title">
-                <h3>{this.props.currentUser.firstName} 's Account Settings</h3>
+                <h3>
+                  {this.props.currentUser.firstName} 's Account Settings
+                </h3>
               </div>
               <ul className="Profile-column-items">
                 <li className="Profile-column-li">
@@ -68,7 +70,10 @@ class ProfileEdit extends React.Component {
                   </Link>
                 </li>
                 <li className="Profile-column-li">
-                  <Link to={"/profile/password"} className="Profile-link-li">
+                  <Link
+                    to={`/user/${this.props.currentUser.id}/password`}
+                    className="Profile-link-li"
+                  >
                     <div className="Profile-li-inside-wrapper">
                       <div className="Profile-li-inside-holder">
                         <span>Password</span>
@@ -83,32 +88,37 @@ class ProfileEdit extends React.Component {
                 <div className="account-settings-content-title">
                   <h2>Profile</h2>
                   <p>
-                    Your name and primary photo will be used in Yelp consumer
-                    and business products.
+                    Your name and primary photo will be used in Yelp
+                    consumer and business products.
                   </p>
                 </div>
-                <form className="account-settings-content-form" onSubmit={this.handleSubmit}>
+                <form
+                  className="account-settings-content-form"
+                  onSubmit={this.handleSubmit}
+                >
                   <div className="account-settings-profile-bio">
                     <label htmlFor="first_name">First Name</label>
-                    <span className="help-block">This field is required.</span>
+                    <span className="help-block">
+                      This field is required.
+                    </span>
                     <input
                       id="first_name"
                       type="text"
                       name="first_name"
                       value={this.state.firstName}
-                      onChange={this.update('firstName')}
+                      onChange={this.update("firstName")}
                     />
                     <label htmlFor="last_name">Last Name</label>
                     <span className="help-block">
-                      This field is required, Only your last initial will show
-                      on your profile.
+                      This field is required, Only your last initial will
+                      show on your profile.
                     </span>
                     <input
                       id="last_name"
                       type="text"
                       name="last_name"
                       value={this.state.lastName}
-                      onChange={this.update('lastName')}
+                      onChange={this.update("lastName")}
                     />
                     <label htmlFor="zipcode">ZIP Code</label>
                     <span className="help-block">
@@ -119,7 +129,7 @@ class ProfileEdit extends React.Component {
                       type="text"
                       name="zipcode"
                       value={this.state.zipcode}
-                      onChange={this.update('zipcode')}
+                      onChange={this.update("zipcode")}
                     />
                     <button
                       type="submit"
@@ -128,7 +138,10 @@ class ProfileEdit extends React.Component {
                     >
                       <span>Save Changes</span>
                     </button>
-                    <Link className="link cancel-submit" to={"/profile"}>
+                    <Link
+                      className="link cancel-submit"
+                      to={`/user/${this.props.targetUser.id}`}
+                    >
                       Cancel
                     </Link>
                   </div>

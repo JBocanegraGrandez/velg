@@ -56,7 +56,7 @@
     margin: -6px 0 3px;
 }
 
-.account-settings-profile-bio [type='text'] {
+.account-settings-profile-bio [type='text'], [type='password'] {
     display: block;
     box-sizing: border-box;
     width: 100%;
@@ -90,6 +90,25 @@
     line-height: 1.28571em;
     padding:  8px 19px 9px;
     border-radius: 3px;
+}
+
+.profile-red-button:disabled{
+    opacity: 0.2;
+}
+
+.alert-error {
+    background: #fcd6d3;
+      width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 12px;
+    padding: 18px 18px 18px 24px;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.alert-message {
+    font-size: 16px;
 }
 
 .cancel-submit {

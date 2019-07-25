@@ -5,6 +5,7 @@ import HeaderSearch from '../header/header_search'
 class ProfileShow extends React.Component {
     constructor(props) {
         super(props);
+
     }
 
     componentDidMount() {
@@ -23,6 +24,21 @@ class ProfileShow extends React.Component {
         this.props.searchbiz(arg).then((res) => this.props.history.push(`/search`));
     }
 
+    showActions() {
+        if (this.props.currentUser.id === this.props.targetUser.id) {
+            return (
+                <div className="user-profile-actions">
+                    <ul className="user-profile-action-link-list">
+                        <li><Link className="link-blank" to={'profile/changepic'}>Change Profile Picture</Link></li>
+                        <li><Link className="link-blank" to={`${this.props.currentUser.id}/edit`}>Update Your Profile</Link></li>
+                    </ul>
+                </div>
+            )
+        } else {
+            return ""
+        }
+    }
+ 
     showReviews(reviews) {
         
         if (this.props.reviews[0] === undefined) {
@@ -102,12 +118,7 @@ class ProfileShow extends React.Component {
                                             <li className="photo-count"><span></span><strong>#</strong>  Photos</li>
                                         </ul>
                                     </div>
-                                    <div className="user-profile-actions">
-                                        <ul className="user-profile-action-link-list">
-                                            <li><Link className="link-blank" to={'profile/changepic'}>Change Profile Picture</Link></li>
-                                            <li><Link className="link-blank" to={`${this.props.currentUser.id}/edit`}>Update Your Profile</Link></li>
-                                        </ul>
-                                    </div>
+                                    {this.showActions()}
                                 </div>
                             </div>
                         </div>
@@ -116,7 +127,7 @@ class ProfileShow extends React.Component {
                             <div className="Profile-show-bot-box-wrapper">
                                 <div className="column column-alpha">
                                     <div className="Profile-column-title">
-                                        <h3>FirstName's Profile</h3>
+                                        <h3>{this.props.targetUser.firstName} 's Profile</h3>
                                     </div>
                                     <ul className="Profile-column-items">
                                         <li></li>

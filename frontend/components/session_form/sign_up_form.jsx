@@ -69,7 +69,7 @@ class SignUpForm extends React.Component {
                   Service</Link> and <Link className="link" to="dad">Privacy Policy.</Link></p>
                 </div>
                 <div>
-                    <button className="fb-button" style={{ marginBottom: '7px' }} onClick={this.demo.bind(this)}
+                    <button className="fb-button" style={{ marginBottom: '7px' }} onClick={this.demo.bind(this)} type="button"
                     ><span>  </span>  Tour as a Guest</button>
                   {/* <button className="fb-button"
                     type="submit"><span><i className="fab fa-facebook-f"></i>  </span>  Sign Up with Facebook</button> */}

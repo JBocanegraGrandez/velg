@@ -4,7 +4,7 @@ import { login } from  '../../actions/session_actions.js';
 // import React from 'react'; //Why this?
 
 const mapStateToPros = ({errors}) => ({
-  errors: errors.errors
+  errors: errors.session
 });
 
 const mapDispatchToProps = dispatch => ({
