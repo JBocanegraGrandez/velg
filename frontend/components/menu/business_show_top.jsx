@@ -2,7 +2,6 @@ import React from 'react';
 import HeaderSearch from '../header/header_search';
 import { Link } from 'react-router-dom';
 import BusinessShowBot from "./business_show_bot";
-// import BusinessReviews from "../reviews/review_show_form";
 import BusinessReviews from "../reviews/review_show_funtional_container";
 import BusinessMapLittle from "../map/business_map_little";
 
@@ -53,9 +52,11 @@ class BusinessShowTop extends React.Component {
                 </div>
                 <div className='right-biz-header'>
                   <div className='review-button-container'>
-                    <button className='write-review'>
-                      <i className="far fa-star"></i> <Link className='link-blank' to={`/business/${this.props.businessId}/create`}>Write a Review</Link>
-                    </button>
+                    <Link className='link-blank' to={`/business/${this.props.businessId}/create`}>
+                      <button className='write-review'>
+                        <i className="far fa-star"></i> Write a Review
+                      </button>
+                    </Link>
                   </div>
                   <div className='social-button-container'>
                   </div>

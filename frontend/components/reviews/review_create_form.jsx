@@ -46,7 +46,7 @@ class ReviewCreateForm extends React.Component {
             funny: 0,
             cool: 0
         }
-        this.props.createReview(this.state.businessId, review)
+        this.props.createReview(review)
     }
 
     showRatingMessage() {
@@ -92,7 +92,7 @@ class ReviewCreateForm extends React.Component {
                             <div className="review-content-title">
                                 <div className="review-content-title-left">
                                     <h2 className="review-content-title-left-h2">
-                                        <Link className="review-title-link" to={'/business/1'}>{business.restaurant_name}</Link>
+                                        <Link className="review-title-link" to={`/business/${business.id}`}>{business.restaurant_name}</Link>
                                     </h2>
                                 </div>
                             </div>

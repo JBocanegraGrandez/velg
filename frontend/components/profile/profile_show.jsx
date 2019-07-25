@@ -24,10 +24,10 @@ class ProfileShow extends React.Component {
     }
 
     showReviews(reviews) {
+        
         if (this.props.reviews[0] === undefined) {
             return null
         }
-        let business = {"cat1": "cat1", "cat2": "cat2", "street": "street", "city": "city", "state": "state"}
         return (
           <ul className="reviews-ul">
             {reviews.map((review)=>{
@@ -62,7 +62,7 @@ class ProfileShow extends React.Component {
                     <div className="review-div-bot-content">
                         <div className='review-div-bot-content-header'>
                             <div className="business-review-stars"></div>
-                            <span className="business-review-date">Date</span>
+                            <span className="business-review-date">{review.createdAt.slice(0,10)}</span>
                         </div>
                                 <p>{review.body}</p>
                     </div>
@@ -71,7 +71,7 @@ class ProfileShow extends React.Component {
               </div>
             </li>
                 )
-            })}
+            }).reverse()}
           </ul>
         );
     }

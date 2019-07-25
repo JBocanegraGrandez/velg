@@ -13,6 +13,7 @@ class BusinessReviews extends React.Component{
     const reviews = this.props.current_biz.reviews;
 
     const reviewArr = Object.values(reviews);
+    reviewArr.reverse()
     return(
       <div>
 

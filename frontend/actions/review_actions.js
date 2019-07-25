@@ -27,8 +27,8 @@ export const receiveReview = ({ body, businessId, authorId,
     funny
 });
 
-export const createReview = (businessId, review) => dispatch => (
-  APIUtil.postReview(businessId, review).then(review => (
+export const createReview = (review) => dispatch => (
+  APIUtil.postReview(review).then(review => (
     dispatch(receiveReview(review))
   ))
 );
