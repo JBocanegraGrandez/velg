@@ -213,7 +213,7 @@ Business.create!(
   lng: -122.446459,
   cat1: "Burgers",
   cat2: "Fast Food",
-  img: "main7"
+  img: "main8"
 )
 
 Business.create!(
@@ -235,7 +235,7 @@ Business.create!(
   lng: -122.403289,
   cat1: "Burgers",
   cat2: "Gluten-Free",
-  img: "main7"
+  img: "main9"
 )
 Business.create!(
   restaurant_name: 'Golden Era Vegan Restaurant',
@@ -256,7 +256,7 @@ Business.create!(
   lng: -122.416633,
   cat1: "Pho",
   cat2: "Vietnamese",
-  img: "main7"
+  img: "main10"
 )
 Business.create!(
   restaurant_name: 'Yummy Yummy',
@@ -277,7 +277,7 @@ Business.create!(
   lng: -122.468824,
   cat1: "Chinese",
   cat2: "Pho",
-  img: "main7"
+  img: "main11"
 )
 Business.create!(
   restaurant_name: 'Pho 2000',
@@ -298,7 +298,7 @@ Business.create!(
   lng: -122.417881,
   cat1: "Chinese",
   cat2: "Noodles",
-  img: "main7"
+  img: "main12"
 )
 
 Review.create!(

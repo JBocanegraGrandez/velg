@@ -13,6 +13,11 @@ import main4 from "../../../app/assets/images/main4.jpg";
 import main5 from "../../../app/assets/images/main5.jpg";
 import main6 from "../../../app/assets/images/main6.jpg";
 import main7 from "../../../app/assets/images/main7.jpg";
+import main8 from "../../../app/assets/images/main8.jpg";
+import main9 from "../../../app/assets/images/main9.jpg";
+import main10 from "../../../app/assets/images/main10.jpg";
+import main11 from "../../../app/assets/images/main11.jpg";
+import main12 from "../../../app/assets/images/main12.jpg";
 
 const coolPojo = {
   "main1": main1,
@@ -22,6 +27,11 @@ const coolPojo = {
   "main5": main5,
   "main6": main6,
   "main7": main7,
+  "main8": main8,
+  "main9": main9,
+  "main10": main10,
+  "main11": main11,
+  "main12": main12,
 
 };
 class BusinessIndex extends React.Component {
@@ -74,14 +84,14 @@ class BusinessIndex extends React.Component {
             <ul>
               {businessesArr.map((business) => {
                 return(
-              <li>
+              <li key={business.id}>
                 <div className="business-index-single-wrapper">
                   <div className="business-index-pic" style={{ backgroundImage: `url(${coolPojo[business.img]})`, backgroundSize: "cover"}}>
                   </div>
                   <div className="business-index-info">
                     <div className="business-index-single-info-top">
                       <div className="info-left">
-                        <h1><span>1.</span>&nbsp;<Link to={`business/${business.id}`} className="link">{business.restaurantName}</Link></h1>
+                        <h1><span>{businessesArr.indexOf(business) + 1}.</span>&nbsp;<Link to={`business/${business.id}`} className="link">{business.restaurantName}</Link></h1>
                         <div className="business-index-review">
                           <div className="bus-rating"></div>
                         </div>
