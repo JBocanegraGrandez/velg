@@ -122,6 +122,7 @@ class BusinessShowTop extends React.Component {
                       </img>
                     </div>
                   </div>
+                  <div className="Pink-background"></div>
                   <button>PREV</button>
                   <button>Next</button>
                   </div>
