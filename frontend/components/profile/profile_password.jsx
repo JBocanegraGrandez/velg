@@ -80,7 +80,7 @@ class ProfilePassword extends React.Component {
                             <ul className="Profile-column-items">
                                 <li className="Profile-column-li">
                                     <Link
-                                        to={"/profile/edit"}
+                                        to={`/user/${this.props.currentUser.id}/edit`}
                                         className="Profile-link-li"
                                     >
                                         <div className="Profile-li-inside-wrapper">
@@ -91,7 +91,7 @@ class ProfilePassword extends React.Component {
                                     </Link>
                                 </li>
                                 <li className="Profile-column-li">
-                                    <Link to={"/profile/password"} className="Profile-link-li li-active">
+                                    <Link to={`/user/${this.props.currentUser.id}/password`} className="Profile-link-li li-active">
                                         <div className="Profile-li-inside-wrapper">
                                             <div className="Profile-li-inside-holder">
                                                 <span>Password</span>
