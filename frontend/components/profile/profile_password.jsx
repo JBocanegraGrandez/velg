@@ -91,6 +91,18 @@ class ProfilePassword extends React.Component {
                                     </Link>
                                 </li>
                                 <li className="Profile-column-li">
+                                    <Link
+                                        to={`/user/${this.props.currentUser.id}/profilepic`}
+                                        className="Profile-link-li"
+                                    >
+                                        <div className="Profile-li-inside-wrapper">
+                                            <div className="Profile-li-inside-holder">
+                                                <span>Change Picture</span>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </li>
+                                <li className="Profile-column-li">
                                     <Link to={`/user/${this.props.currentUser.id}/password`} className="Profile-link-li li-active">
                                         <div className="Profile-li-inside-wrapper">
                                             <div className="Profile-li-inside-holder">

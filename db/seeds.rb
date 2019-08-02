@@ -33,7 +33,7 @@ User.create!(
   zipcode: 94523
 )
 
-Business.create!(
+the_house = Business.create!(
   restaurant_name: 'The House',
   street: "1230 Grant Ave",
   neighborhood: 'North Beach',
@@ -56,7 +56,15 @@ Business.create!(
   cat2: "",
   img: "main1"
 )
-Business.create!(
+
+the_house_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thehouse1.jpg')
+the_house.photos.attach(io: the_house_00, filename:"the_house_00.jpg")
+the_house_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thehouse2.jpg')
+the_house.photos.attach(io: the_house_01, filename:"the_house_01.jpg")
+the_house_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thehouse3.jpg')
+the_house.photos.attach(io: the_house_02, filename:"the_house_02.jpg")
+
+the_shizen = Business.create!(
   restaurant_name: 'Shizen Vegan Sushi Bar & Izakaya',
   street: "370 14th St",
   neighborhood: 'Mission',
@@ -79,7 +87,15 @@ Business.create!(
   cat2: "Izakaya",
   img: "main2"
 )
-Business.create!(
+
+the_shizen_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theshizen1.jpg')
+the_shizen.photos.attach(io: the_shizen_00, filename:"the_shizen_00.jpg")
+the_shizen_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theshizen2.jpg')
+the_shizen.photos.attach(io: the_shizen_01, filename:"the_shizen_01.jpg")
+the_shizen_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theshizen3.jpg')
+the_shizen.photos.attach(io: the_shizen_02, filename:"the_shizen_02.jpg")
+
+the_ananda = Business.create!(
   restaurant_name: 'Ananda Fuara',
   street: "1298 Market St",
   neighborhood: 'Civic Center',
@@ -102,7 +118,15 @@ Business.create!(
   cat2: "",
   img: "main3"
 )
-Business.create!(
+
+the_ananda_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theananda1.jpg')
+the_ananda.photos.attach(io: the_ananda_00, filename:"the_ananda_00.jpg")
+the_ananda_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theananda2.jpg')
+the_ananda.photos.attach(io: the_ananda_01, filename:"the_ananda_01.jpg")
+the_ananda_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theananda3.jpg')
+the_ananda.photos.attach(io: the_ananda_02, filename:"the_ananda_02.jpg")
+
+the_gracias = Business.create!(
   restaurant_name: 'Gracias Madre',
   street: "2211 Mission St",
   neighborhood: 'Mission',
@@ -125,7 +149,14 @@ Business.create!(
   cat2: "Breakfast",
   img: "main4"
 )
-Business.create!(
+the_gracias_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thegracias1.jpg')
+the_gracias.photos.attach(io: the_gracias_00, filename:"the_gracias_00.jpg")
+the_gracias_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thegracias2.jpg')
+the_gracias.photos.attach(io: the_gracias_01, filename:"the_gracias_01.jpg")
+the_gracias_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thegracias3.jpg')
+the_gracias.photos.attach(io: the_gracias_02, filename:"the_gracias_02.jpg")
+
+the_indochine = Business.create!(
   restaurant_name: 'Indochine Vegan',
   street: "508 Valencia St",
   neighborhood: 'Mission',
@@ -148,7 +179,14 @@ Business.create!(
   cat2: "Seafood",
   img: "main5"
 )
-Business.create!(
+the_indochine_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theindochine1.jpg')
+the_indochine.photos.attach(io: the_indochine_00, filename:"the_indochine_00.jpg")
+the_indochine_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theindochine2.jpg')
+the_indochine.photos.attach(io: the_indochine_01, filename:"the_indochine_01.jpg")
+the_indochine_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theindochine3.jpg')
+the_indochine.photos.attach(io: the_indochine_02, filename:"the_indochine_02.jpg")
+
+the_vegan = Business.create!(
   restaurant_name: 'Vegan Picnic',
   street: "1977A Union St",
   neighborhood: 'Marina/Cow Hollow',
@@ -172,7 +210,14 @@ Business.create!(
   img: "main6"
 )
 
-Business.create!(
+the_vegan_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thevegan1.jpg')
+the_vegan.photos.attach(io: the_vegan_00, filename:"the_vegan_00.jpg")
+the_vegan_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thevegan2.jpg')
+the_vegan.photos.attach(io: the_vegan_01, filename:"the_vegan_01.jpg")
+the_vegan_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thevegan3.jpg')
+the_vegan.photos.attach(io: the_vegan_02, filename:"the_vegan_02.jpg")
+
+the_liho = Business.create!(
   restaurant_name: 'Liholiho Yacht Club',
   street: "871 Sutter St",
   neighborhood: 'Lower Nob Hill',
@@ -194,7 +239,15 @@ Business.create!(
   img: "main7"
 )
 
-Business.create!(
+the_liho_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theliho1.jpg')
+the_liho.photos.attach(io: the_liho_00, filename:"the_liho_00.jpg")
+the_liho_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theliho2.jpg')
+the_liho.photos.attach(io: the_liho_01, filename:"the_liho_01.jpg")
+the_liho_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theliho3.jpg')
+the_liho.photos.attach(io: the_liho_02, filename:"the_liho_02.jpg")
+
+
+the_burger = Business.create!(
   restaurant_name: 'VeganBurg',
   street: "1466 Haight St",
   neighborhood: 'The Haight',
@@ -216,7 +269,14 @@ Business.create!(
   img: "main8"
 )
 
-Business.create!(
+the_burger_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theburger1.jpg')
+the_burger.photos.attach(io: the_burger_00, filename:"the_burger_00.jpg")
+the_burger_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theburger2.jpg')
+the_burger.photos.attach(io: the_burger_01, filename:"the_burger_01.jpg")
+the_burger_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theburger3.jpg')
+the_burger.photos.attach(io: the_burger_02, filename:"the_burger_02.jpg")
+
+the_next = Business.create!(
   restaurant_name: 'Next Level Burger',
   street: "450 Rhode Island St",
   neighborhood: 'Potrero Hill',
@@ -237,7 +297,16 @@ Business.create!(
   cat2: "Gluten-Free",
   img: "main9"
 )
-Business.create!(
+
+the_next_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thenext1.jpg')
+the_next.photos.attach(io: the_next_00, filename:"the_next_00.jpg")
+the_next_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thenext2.jpg')
+the_next.photos.attach(io: the_next_01, filename:"the_next_01.jpg")
+the_next_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thenext3.jpg')
+the_next.photos.attach(io: the_next_02, filename:"the_next_02.jpg")
+
+
+the_golden = Business.create!(
   restaurant_name: 'Golden Era Vegan Restaurant',
   street: "395 Golden Gate Ave",
   neighborhood: 'Civic Center',
@@ -258,7 +327,15 @@ Business.create!(
   cat2: "Vietnamese",
   img: "main10"
 )
-Business.create!(
+
+the_golden_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thegolden1.jpg')
+the_golden.photos.attach(io: the_golden_00, filename:"the_golden_00.jpg")
+the_golden_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thegolden2.jpg')
+the_golden.photos.attach(io: the_golden_01, filename:"the_golden_01.jpg")
+the_golden_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thegolden3.jpg')
+the_golden.photos.attach(io: the_golden_02, filename:"the_golden_02.jpg")
+
+the_yummy = Business.create!(
   restaurant_name: 'Yummy Yummy',
   street: "1015 Irving St",
   neighborhood: 'Inner Sunset',
@@ -279,7 +356,14 @@ Business.create!(
   cat2: "Pho",
   img: "main11"
 )
-Business.create!(
+the_yummy_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theyummy1.jpg')
+the_yummy.photos.attach(io: the_yummy_00, filename:"the_yummy_00.jpg")
+the_yummy_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theyummy2.jpg')
+the_yummy.photos.attach(io: the_yummy_01, filename:"the_yummy_01.jpg")
+the_yummy_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/theyummy3.jpg')
+the_yummy.photos.attach(io: the_yummy_02, filename:"the_yummy_02.jpg")
+
+the_pho = Business.create!(
   restaurant_name: 'Pho 2000',
   street: "637 Larkin St",
   neighborhood: 'Tenderloin',
@@ -300,6 +384,13 @@ Business.create!(
   cat2: "Noodles",
   img: "main12"
 )
+
+the_pho_00 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thepho1.jpg')
+the_pho.photos.attach(io: the_pho_00, filename:"the_pho_00.jpg")
+the_pho_01 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thepho2.jpg')
+the_pho.photos.attach(io: the_pho_01, filename:"the_pho_01.jpg")
+the_pho_02 = open('https://velg-seeds.s3-us-west-1.amazonaws.com/thepho3.jpg')
+the_pho.photos.attach(io: the_pho_02, filename:"the_pho_02.jpg")
 
 Review.create!(
   body: <<~REVIEW,

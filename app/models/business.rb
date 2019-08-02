@@ -7,6 +7,7 @@ has_many :reviews,
 foreign_key: :business_id,
 class_name: :Review
 
+has_many_attached :photos
 
   def self.search_businesses(arg)
 

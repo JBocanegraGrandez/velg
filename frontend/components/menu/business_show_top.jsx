@@ -24,6 +24,19 @@ class BusinessShowTop extends React.Component {
       if (this.props.business === undefined){
         return null;
       }
+
+    let photo1;
+    let photo2;
+    let photo3;
+    if (this.props.business.photos.length === 3) {
+      photo1 = <img id="first" className="img-show-roll" src={this.props.business.photos[0]} />
+      photo2 = <img id="middle" className="img-show-roll-mid" src={this.props.business.photos[1]} />
+      photo3 = <img id="last" className="img-show-roll" src={this.props.business.photos[2]} />
+    } else {
+      photo1 = <img id="first" src="https://s3-media2.fl.yelpcdn.com/bphoto/8J9ZswfeV5zdVJ5fxQGN5Q/ls.jpg" alt="no-photo" />
+      photo2 = <img id="middle" src="https://s3-media3.fl.yelpcdn.com/bphoto/rRqOxkp1SlCpDKOGwBY-fw/ls.jpg" alt="no-photo" />
+      photo3 = <img id="last" src="https://s3-media1.fl.yelpcdn.com/bphoto/MS7ZROyC-YKYQRcHocmrKw/o.jpg" alt="no-photo" />
+    }
     return(
       <div>
         <HeaderSearch />
@@ -71,7 +84,7 @@ class BusinessShowTop extends React.Component {
                     <div className="map-bot">
                       <ul>
                         <li className='relative'>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                        <span><i className="fa fa-map-marker" aria-hidden="true"></i></span>
                           <div className="address-main">
                           {this.props.business.street},<br></br>
                           {this.props.business.city}, {this.props.business.state} {this.props.business.zipcode},<br/>
@@ -110,16 +123,15 @@ class BusinessShowTop extends React.Component {
                 <div className="pics-preview">
                   <div className="pic-box">
                     <div className="pic-roll">
-                      <img className="img-show-roll" src="https://s3-media2.fl.yelpcdn.com/bphoto/8J9ZswfeV5zdVJ5fxQGN5Q/ls.jpg">
-                      </img>
+                      {photo1}
                     </div>
                     <div className="pic-roll-main">
-                      <img className="img-show-roll" src="https://s3-media3.fl.yelpcdn.com/bphoto/rRqOxkp1SlCpDKOGwBY-fw/ls.jpg">
-                      </img>
+                      
+                        {photo2}
+                      
                     </div>
                     <div className="pic-roll">
-                      <img className="img-show-roll" src="https://s3-media1.fl.yelpcdn.com/bphoto/MS7ZROyC-YKYQRcHocmrKw/o.jpg">
-                      </img>
+                    {photo3}
                     </div>
                   </div>
                   <div className="Pink-background"></div>

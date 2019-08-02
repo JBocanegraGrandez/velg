@@ -30,7 +30,7 @@ class Api::BusinessesController < ApplicationController
   end
 
 
-  # def business_params
-  #   params.require(:business).permit(:restaurant_name, :city, :neighborhood, :state, :street)
-  # end
+  def business_params
+    params.require(:business).permit(:restaurant_name, :city, :neighborhood, :state, :street)
+  end
 end

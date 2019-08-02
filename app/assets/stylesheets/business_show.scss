@@ -262,7 +262,17 @@
   z-index: 100;
   width: 253px;
   height: 253px;
+}
+.img-show-roll-mid:hover {
+  transform: scale(1.15);
+  z-index: 100;
+  width: 253px;
+  height: 253px;
+}
 
+.img-show-roll-mid {
+  width: 250px;
+  height: 250px;
 }
 
 .pic-roll:hover {
