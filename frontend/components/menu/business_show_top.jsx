@@ -34,7 +34,7 @@ class BusinessShowTop extends React.Component {
       photo3 = <img id="last" className="img-show-roll" src={this.props.business.photos[2]} />
     } else {
       photo1 = <img id="first" src="https://s3-media2.fl.yelpcdn.com/bphoto/8J9ZswfeV5zdVJ5fxQGN5Q/ls.jpg" alt="no-photo" />
-      photo2 = <img id="middle" src="https://s3-media3.fl.yelpcdn.com/bphoto/rRqOxkp1SlCpDKOGwBY-fw/ls.jpg" alt="no-photo" />
+      photo2 = <img id="middle" className="img-show-roll-mid" src="https://s3-media3.fl.yelpcdn.com/bphoto/rRqOxkp1SlCpDKOGwBY-fw/ls.jpg" alt="no-photo" />
       photo3 = <img id="last" src="https://s3-media1.fl.yelpcdn.com/bphoto/MS7ZROyC-YKYQRcHocmrKw/o.jpg" alt="no-photo" />
     }
     return(
