@@ -4,7 +4,8 @@
 
 Velg is a Yelp clone site that allows users to browse vegan friendly business
 
-
+![Yelp screenshot]
+(https://github.com/JBocanegraGrandez/velg/blob/master/readme/velg_screenshot.png)
 ## Technologies
   ### Backend:
     Ruby on Rails (2.5.1)
