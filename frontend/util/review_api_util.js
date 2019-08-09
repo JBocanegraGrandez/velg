@@ -19,10 +19,10 @@ export const getReviews = businessId =>
     url: `api/bussinesses/${businessId}/reviews`
   });
 
-export const postReview = (review) => {
+export const postReview = (review) => (
   $.ajax({
     method: 'POST',
     url: `api/businesses/${review.business_id}/reviews`,
     data: { review }
   })
-};
+);

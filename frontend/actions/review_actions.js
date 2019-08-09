@@ -32,6 +32,17 @@ export const createReview = (review) => dispatch => (
     dispatch(receiveReview(review))
   ))
 );
+// export const createReview = (review) => dispatch => {
+//   return (
+//     APIUtil.postReview(review).then(review => {
+//       dispatch(receiveReview(review))
+//     })
+//   )
+// };
+
+// export const createReview = (review) => dispatch => (
+//   APIUtil.postReview(review)
+// );
 
 
 

@@ -58,7 +58,7 @@ class ReviewCreateForm extends React.Component {
             funny: 0,
             cool: 0
         }
-        this.props.createReview(review)
+        this.props.createReview(review).then((res) => this.props.history.push(`/business/${this.state.businessId}`))
     }
 
     showStars() {
