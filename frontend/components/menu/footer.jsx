@@ -20,7 +20,7 @@ import { login } from '../../actions/session_actions';
             <h3>Discover More Projects</h3>
             <ul>
               <li><a className="link" href="https://github.com/JBocanegraGrandez/DDrad">DDrad</a></li>
-              <li><a className="link" href="https://simply-travel.herokuapp.com/">SimpleTravel</a></li>
+              <li><a className="link" href="https://instakitties.herokuapp.com/#/">Instakitties</a></li>
             </ul>
           </div>
           <div className="footer-title">

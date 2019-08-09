@@ -29,7 +29,7 @@ class ProfileShow extends React.Component {
             return (
                 <div className="user-profile-actions">
                     <ul className="user-profile-action-link-list">
-                        <li><Link className="link-blank" to={'profile/changepic'}>Change Profile Picture</Link></li>
+                        <li><Link className="link-blank" to={`${this.props.currentUser.id}/profilepic`}>Change Profile Picture</Link></li>
                         <li><Link className="link-blank" to={`${this.props.currentUser.id}/edit`}>Update Your Profile</Link></li>
                     </ul>
                 </div>
@@ -49,7 +49,7 @@ class ProfileShow extends React.Component {
             {reviews.map((review)=>{
                 return(
 
-            <li>
+            <li key={review.id}>
               <div className="review-div">
                 <div className="review-div-top">
                   <div className="review-div-details">

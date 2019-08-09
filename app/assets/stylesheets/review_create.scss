@@ -59,6 +59,7 @@
 .review-create-rate-fieldset {
     vertical-align: middle;
     display: inline-block;
+    border: 0;
 }
 
 .review-create-stars-ul {
@@ -70,6 +71,29 @@
     background-size: 162px 180px;
     display: inline-block;
     vertical-align: middle;
+}
+
+.no-star {
+    background-position: 0 0;
+}
+
+.one-star {
+    background-position: 0 -30px;
+}
+
+.two-star {
+    background-position: 0 -60px;
+}
+
+.three-star {
+    background-position: 0 -90px;
+}
+
+.four-star {
+    background-position: 0 -120px;
+}
+.five-star {
+    background-position: 0 -150px;
 }
 
 .review-create-stars-message {
@@ -121,8 +145,22 @@
 }
 
 .review-create-stars-li {
-    padding-left: 0;
+    padding-left: 3px;
     float: left;
     height: 30px;
     width: 30px;
+}
+.review-create-stars-li:first-child {
+    padding-left: 0
+}
+.review-create-stars-li-input {
+    margin: .15em 6px 0 1px;
+    -webkit-appearance: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    outline: 0;
 }

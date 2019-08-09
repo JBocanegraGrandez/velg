@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import React from 'react';
 
 
@@ -33,7 +34,7 @@ class BusinessReviews extends React.Component{
                         </div>
                         <div className="business-review-details">
                           <div className='business-review-author-name'>
-                            {review.author.first_name} {review.author.last_name[0]}
+                                <Link className="link-blank"to={`/user/${review.author.id}`}>{review.author.first_name} {review.author.last_name[0]}</Link>
                           </div>
                           <div className='business-review-author-info'>
                             <span className="span-icon">(I)</span><span className="span-number">16</span><span className="span-text">reviews</span>
