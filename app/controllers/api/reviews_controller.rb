@@ -6,7 +6,9 @@ class Api::ReviewsController < ApplicationController
     if params.has_key?(:user_id)
       @reviews = Review.where(author_id: params[:user_id])
       
-    else 
+    elsif params.has_key?(:business_id)
+      @reviews = Review.where(business_id: params[:business_id])  
+    else
       @reviews = Review.all
     end
     render 'api/reviews/index'
@@ -26,6 +28,12 @@ class Api::ReviewsController < ApplicationController
     else
       render json: @review.errors.full_messages, status: 422
     end
+  end
+
+  def destroy
+      @review = Review.find_by(id: params[:id])
+      @review.destroy
+      render 'api/reviews/show'
   end
 
 

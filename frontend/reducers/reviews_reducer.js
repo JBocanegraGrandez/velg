@@ -2,6 +2,8 @@ import merge from 'lodash/merge';
 
 import {
   RECEIVE_REVIEWS_USER,
+  DELETE_REVIEW,
+  RECEIVE_REVIEWS
 } from '../actions/review_actions';
 
 const reviewsReducer = (state = {}, action) => {
@@ -23,6 +25,20 @@ const reviewsReducer = (state = {}, action) => {
       // newState[review.business_id].reviewIds.push(review.id);
       // newState[review.business_id].average_rating = average_rating;
       // return newState;
+    case RECEIVE_REVIEWS:
+      let newState = {}
+      action.reviews.forEach(element => {
+        newState[element.id] = element
+      });
+      return newState
+    case DELETE_REVIEW:
+      // let newState = Object.assign(state)
+       newState = {}
+      Object.values(state).forEach(element => {
+        newState[element.id] = element
+      });
+      delete newState[action.review.id]
+      return newState
     default:
       return state;
   }

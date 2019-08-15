@@ -6,6 +6,8 @@ export const getReviewsUser = userId => (
   })
 );
 
+
+
 export const getReview = id => (
   $.ajax({
     method: 'GET',
@@ -13,10 +15,10 @@ export const getReview = id => (
   })
 );
 
-export const getReviews = businessId =>
+export const getReviewsBusiness = businessId =>
   $.ajax({
     method: "GET",
-    url: `api/bussinesses/${businessId}/reviews`
+    url: `api/businesses/${businessId}/reviews`
   });
 
 export const postReview = (review) => (
@@ -26,3 +28,11 @@ export const postReview = (review) => (
     data: { review }
   })
 );
+
+export const deleteReview = id => (
+  $.ajax({
+    method: 'DELETE',
+    url: `api/reviews/${id}`
+  })
+);
+

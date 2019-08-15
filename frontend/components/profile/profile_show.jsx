@@ -38,6 +38,25 @@ class ProfileShow extends React.Component {
             return ""
         }
     }
+
+    showReviewActions(review) {
+        if (this.props.currentUser.id === review.authorId) { 
+            return (
+              <div className="review-actions-div">
+                {/* <Link className="review-link-edit" to={"comment/edit"}>
+                  Edit Review
+                </Link> */}
+                <form className="review-link-edit-form">
+                  <button className="review-link-edit-form-button">
+                    <i className="fa fa-trash" aria-hidden="true" />
+                  </button>
+                </form>
+              </div>
+            );
+        } else {
+            return ""
+        }
+    }
  
     showReviews(reviews) {
         
@@ -82,8 +101,8 @@ class ProfileShow extends React.Component {
                         </div>
                                 <p>{review.body}</p>
                     </div>
-                    <div className="review-div-bot-tools"></div>
                 </div>
+                {this.showReviewActions(review)}
               </div>
             </li>
                 )

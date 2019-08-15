@@ -7,12 +7,18 @@ import BusinessMapLittle from "../map/business_map_little";
 
 class BusinessShowTop extends React.Component {
   componentDidMount() {
-    this.props.fetchBusiness(this.props.businessId);
+    this.props.fetchBusiness(this.props.businessId).then(() => {
+        this.props.fetchReviewsBusiness(this.props.businessId)
+    });
   }
 
   componentWillReceiveProps(nextprops) {
     if (this.props.businessId !== nextprops.businessId) {
-      this.props.fetchBusiness(nextprops.businessId);
+      this.props.fetchBusiness(nextprops.businessId).then(
+        () => {
+          this.props.fetchReviewsBusiness(this.props.businessId)
+        }
+      );
     }
   }
 

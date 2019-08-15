@@ -3,10 +3,15 @@ import * as APIUtil from '../util/review_api_util';
 export const RECEIVE_REVIEWS = 'RECEIVE_REVIEWS';
 export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 export const RECEIVE_REVIEWS_USER = 'RECEIVE_REVIEW_USER';
+export const DELETE_REVIEW = 'DELETE_REVIEW';
 
 export const receiveReviews = reviews => ({
   type: RECEIVE_REVIEWS,
   reviews,
+});
+export const deleteReview = review => ({
+  type: DELETE_REVIEW,
+  review,
 });
 
 export const receiveReviewsUser = reviews => ({
@@ -32,19 +37,6 @@ export const createReview = (review) => dispatch => (
     dispatch(receiveReview(review))
   ))
 );
-// export const createReview = (review) => dispatch => {
-//   return (
-//     APIUtil.postReview(review).then(review => {
-//       dispatch(receiveReview(review))
-//     })
-//   )
-// };
-
-// export const createReview = (review) => dispatch => (
-//   APIUtil.postReview(review)
-// );
-
-
 
 export const fetchReviewsUser = (userId) => dispatch => {
   // debugger
@@ -55,4 +47,19 @@ export const fetchReviewsUser = (userId) => dispatch => {
     })
   )
 };
+
+export const fetchReviewsBusiness = (businessId) => dispatch => {
+  return (
+    APIUtil.getReviewsBusiness(businessId).then(reviews => {
+      dispatch(receiveReviews(reviews))
+    })
+  )
+}
+
+export const destroyReview = (id) => dispatch => {
+  return (
+  APIUtil.deleteReview(id).then(review => (
+    dispatch(deleteReview(review))
+  )))
+  }
 

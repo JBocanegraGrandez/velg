@@ -268,3 +268,31 @@
     display: flex;
     line-height: 19px;
 }
+
+.review-actions-div {
+    overflow: hidden;
+}
+
+.review-link-edit {
+    float: left;
+}
+.review-link-edit-form {
+    float: right;
+}
+
+.review-link-edit-form-button {
+    float: right;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 12px;
+    line-height: 1.5em;
+    color: #999;
+    background: transparent;
+    box-shadow: none;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}

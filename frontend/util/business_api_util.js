@@ -27,6 +27,6 @@ export const createReview = (review)=> (
 export const getReviews = businessId => (
   $.ajax({
     method: 'GET',
-    url: `api/bussinesses/${businessId}/reviews`,
+    url: `api/businesses/${businessId}/reviews`,
   })
 );
