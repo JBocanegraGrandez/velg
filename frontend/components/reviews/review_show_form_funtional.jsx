@@ -8,7 +8,8 @@ class BusinessReviews extends React.Component{
   }
 
   showReviewActions(review) {
-    if (this.props.currentUser.id === review.authorId) {
+    // debugger
+    if ( 'LALALA' || this.props.currentUser.id === review.authorId) {
       return (
         <div className="review-actions-div">
           {/* <Link className="review-link-edit" to={"comment/edit"}>
