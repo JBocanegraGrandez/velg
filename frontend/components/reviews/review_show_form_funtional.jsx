@@ -9,19 +9,22 @@ class BusinessReviews extends React.Component{
 
   showReviewActions(review) {
     // debugger
-    if ( 'LALALA' || this.props.currentUser.id === review.authorId) {
-      return (
-        <div className="review-actions-div">
-          {/* <Link className="review-link-edit" to={"comment/edit"}>
-            Edit Review
-                </Link> */}
-          <form className="review-link-edit-form">
-            <button onClick={() => this.props.deleteReview(review.id)}className="review-link-edit-form-button">
-              <i className="fa fa-trash" aria-hidden="true" />
-            </button>
-          </form>
-        </div>
-      );
+    if (this.props.currentUser) {
+      if (this.props.currentUser.id === review.authorId) {
+        return (
+          <div className="review-actions-div">
+            {/* <Link className="review-link-edit" to={"comment/edit"}>
+              Edit Review
+                  </Link> */}
+            <form className="review-link-edit-form">
+              <button onClick={() => this.props.deleteReview(review.id)}className="review-link-edit-form-button">
+                <i className="fa fa-trash" aria-hidden="true" />
+              </button>
+            </form>
+          </div>
+        );
+      }
+
     } else {
       return ""
     }
